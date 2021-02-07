@@ -1,0 +1,6 @@
+[user]
+	name = James Patrick Kerrane
+	email = hi@jameskerrane.com
+	username = thatrobotdev
+[core]
+	excludesfile = /Users/jameskerrane/.gitignore_global

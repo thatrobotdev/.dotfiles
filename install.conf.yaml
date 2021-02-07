@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: .zshrc
+    ~/.gitconfig: .gitconfig
+    ~/.gitignore_global: .gitignore_global
+    ~/.mackup.cfg: .mackup.cfg
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
