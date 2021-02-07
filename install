@@ -2,21 +2,27 @@
 
 echo "Setting up your Mac..."
 
-# Check for Homebrew and install if we don't have it
-echo "Checking for Homebrew..."
-if test ! $(which brew); then
-  echo "Installing Homebrew..."
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# Homebrew config if user doesn't pass a -nh or --no-homebrew argument
+if [ "$1" = "-nh" ] || [ "$1" = "--no-homebrew" ]; then
+    echo "Skipping Homebrew recipe update"
+    else
+    
+    # Check for Homebrew and install if we don't have it
+    echo "Checking for Homebrew..."
+    if test ! $(which brew); then
+        echo "Installing Homebrew..."
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    fi
+    
+    echo "Updating Homebrew recipes... (you can skip with '-nh' or '--no-homebrew')"
+    brew update
+
+    # Install all our dependencies with bundle (See Brewfile)
+    echo "Installing all our dependencies with bundle..."
+    brew tap homebrew/bundle
+    brew bundle
 fi
-
-# Update Homebrew recipes
-echo "Updating Homebrew recipes..."
-brew update
-
-# Install all our dependencies with bundle (See Brewfile)
-echo "Installing all our dependencies with bundle..."
-brew tap homebrew/bundle
-brew bundle
+shift
 
 # Install Oh My ZSH (https://github.com/ohmyzsh/ohmyzsh) if it isn't installed 
 echo "Checking for Oh My ZSH..."
@@ -42,10 +48,6 @@ git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
-
-# Set global gitingore
-echo "Setting global gitignore..."
-git config --global core.excludesfile ~/.gitignore_global
 
 # Restoring macOS configs with mackup
 echo "Restoring macOS configs with mackup..."

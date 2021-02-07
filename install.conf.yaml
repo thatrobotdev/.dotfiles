@@ -7,8 +7,9 @@
 
 - link:
     ~/.zshrc: .zshrc
-    ~/.gitconfig: .gitconfig
-    ~/.gitignore_global: .gitignore_global
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore_global: git/.gitignore_global
+    ~/.gitattributes: git/.gitattributes
     ~/.mackup.cfg: .mackup.cfg
 
 - shell:
