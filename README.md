@@ -39,3 +39,9 @@ cd ~/.dotfiles
 
 ./install
 ```
+
+## TODO
+* Get install into one command
+* Automatically type in passwords when prompted?
+* Consolidate mackup and dotbot
+* Get working on windows + mac
