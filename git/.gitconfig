@@ -1,6 +1,11 @@
 [user]
-	name = James Patrick Kerrane
+	name = James Kerrane
 	email = hi@jameskerrane.com
 	username = thatrobotdev
 [core]
 	excludesfile = /Users/jameskerrane/.gitignore_global
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
