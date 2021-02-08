@@ -26,9 +26,9 @@ I highly reccommend you look for other dotfiles intended for people to fork, or 
 
 1. Log-in to the Mac App Store
 
-2:
-```sh
+2. Run the following code in Terminal:
 
+```sh
 # Install Brew + git if you don't have them installed
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
 # brew install git
