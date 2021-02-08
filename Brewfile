@@ -87,3 +87,4 @@ mas 'HazeOver', id: 430798174
 mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Slack', id: 803453959
 mas 'Plash', id: 1494023538
+mas 'Due - Reminders & Timers', id: 524373870
