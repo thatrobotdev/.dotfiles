@@ -63,6 +63,7 @@ cask 'unity-hub'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'zotero'
+cask 'zoom'
 
 # Fonts
 cask 'font-lato'
