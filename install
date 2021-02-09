@@ -53,4 +53,7 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 echo "Restoring macOS configs with mackup..."
 mackup restore
 
+echo "Backing up current configuration..."
+mackup backup
+
 echo "Ayy we good"
