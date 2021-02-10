@@ -5,6 +5,7 @@
 [core]
 	excludesfile = /Users/jameskerrane/.gitignore_global
 	editor = code --wait
+	autocrlf = input
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
