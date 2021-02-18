@@ -19,6 +19,7 @@ brew 'svn'
 brew 'node'
 
 # Apps
+cask '1password'
 cask 'alfred'
 cask 'adobe-creative-cloud'
 cask 'anki'
