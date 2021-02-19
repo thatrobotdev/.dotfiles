@@ -21,6 +21,7 @@ brew 'node'
 # Apps
 cask '1password'
 cask 'alfred'
+cask 'arduino'
 cask 'adobe-creative-cloud'
 cask 'anki'
 cask 'appcleaner'

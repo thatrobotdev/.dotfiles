@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "d4003215b6b2537f17687ed3e3660b5a73a755be"
+        "revision": "c170c4ea354c3d52744a79bc93e45c164f38c5ea"
       },
       "homebrew/cask-fonts": {
         "revision": "7dfbc2e0cf5b9cb303a73ca166b8e394f8f1840f"
       },
       "homebrew/cask-versions": {
-        "revision": "63caa10606deaa4b9c5a8bb75964b71a6a0547cd"
+        "revision": "6e5ff92a3ddd56de83e140c805bf918760c7a30c"
       },
       "homebrew/bundle": {
         "revision": "1528860218da1b1a9c8c84f56a47393854f52b96"
@@ -606,6 +606,12 @@
         "options": {
           "full_name": "font-source-serif-pro"
         }
+      },
+      "arduino": {
+        "version": "1.8.13",
+        "options": {
+          "full_name": "arduino"
+        }
       }
     },
     "mas": {
@@ -671,9 +677,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.1-116-g3ff5795",
+        "HOMEBREW_VERSION": "3.0.1-120-g5ca03ab",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "b0affef98bcf720acd2f447c4a8aae3728ae4d01",
+        "Homebrew/homebrew-core": "7e4690bd781c6468e0ddc5b42d6df3b14fe03869",
         "CLT": "",
         "Xcode": "12.4",
         "macOS": "11.2.1"
