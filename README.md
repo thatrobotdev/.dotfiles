@@ -1,6 +1,6 @@
 # .dotfiles
 
-My personal dotfiles for macOS.
+My personal dotfiles for macOS, and a packaged installation script for new OSX computers.
 
 ## What are dotfiles?
 
@@ -40,8 +40,18 @@ cd ~/.dotfiles
 ./install
 ```
 
+## Commands
+Example usage: `./install [-h, -n]`
+
+All errors are typed in RED, installing is denoted in GREEN, and logging starts with the "⚙" symbol.
+
+Options:
+* `-h`, `--help`: displays description and options
+* `-n`, `--no-homebrew`: skips Homebrew config when passed
+
 ## TODO
 * Get install into one command
 * Automatically type in passwords when prompted?
 * Consolidate mackup and dotbot
-* Get working on windows + mac
+* Get working on windows
+* Clean up script for the ordering of items in the Brewfile
