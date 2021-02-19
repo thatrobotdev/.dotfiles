@@ -3,6 +3,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
+tap 'homebrew/cask-drivers'
 
 # Binaries
 brew 'coreutils' # Those that come with macOS are outdated
@@ -74,6 +75,9 @@ cask 'font-roboto'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+
+# Drivers
+cask 'silicon-labs-vcp-driver'
 
 # Mac App Store
 mas 'Things', id: 904280696

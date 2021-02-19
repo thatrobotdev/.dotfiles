@@ -12,6 +12,9 @@
       },
       "homebrew/bundle": {
         "revision": "1528860218da1b1a9c8c84f56a47393854f52b96"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "88ac160237ba076ea93285151ef4fef8bc221c86"
       }
     },
     "brew": {
@@ -612,6 +615,12 @@
         "options": {
           "full_name": "arduino"
         }
+      },
+      "silicon-labs-vcp-driver": {
+        "version": "6.0",
+        "options": {
+          "full_name": "silicon-labs-vcp-driver"
+        }
       }
     },
     "mas": {
@@ -679,7 +688,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.0.1-120-g5ca03ab",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "7e4690bd781c6468e0ddc5b42d6df3b14fe03869",
+        "Homebrew/homebrew-core": "7da1fbfa577d952a93538f622a91fafeb6115832",
         "CLT": "",
         "Xcode": "12.4",
         "macOS": "11.2.1"
