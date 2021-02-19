@@ -55,3 +55,4 @@ Options:
 * Consolidate mackup and dotbot
 * Get working on windows
 * Clean up script for the ordering of items in the Brewfile
+* Automatically assemble global .gitignore_global from https://github.com/github/gitignore
