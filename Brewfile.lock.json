@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "c170c4ea354c3d52744a79bc93e45c164f38c5ea"
+        "revision": "ddca24182b04702eb59006c9db807a92f2d36c61"
       },
       "homebrew/cask-fonts": {
-        "revision": "7dfbc2e0cf5b9cb303a73ca166b8e394f8f1840f"
+        "revision": "13f260153cb2595c8a5a9e62668593cafacf1f19"
       },
       "homebrew/cask-versions": {
-        "revision": "6e5ff92a3ddd56de83e140c805bf918760c7a30c"
+        "revision": "c689c08d9c164451291e26abab40d421a7590d5e"
       },
       "homebrew/bundle": {
         "revision": "1528860218da1b1a9c8c84f56a47393854f52b96"
@@ -621,6 +621,12 @@
         "options": {
           "full_name": "silicon-labs-vcp-driver"
         }
+      },
+      "oracle-jdk": {
+        "version": "15.0.2,7:0d1cfde4252546c6931946de8db48ee2",
+        "options": {
+          "full_name": "oracle-jdk"
+        }
       }
     },
     "mas": {
@@ -688,7 +694,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.0.1-120-g5ca03ab",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "7da1fbfa577d952a93538f622a91fafeb6115832",
+        "Homebrew/homebrew-core": "2d56784c5667dbe69aa6501c7cbd25b294e51a47",
         "CLT": "",
         "Xcode": "12.4",
         "macOS": "11.2.1"
