@@ -1,8 +1,8 @@
 # Taps
+tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
-tap 'homebrew/bundle'
 tap 'homebrew/cask-drivers'
 
 # Binaries
@@ -10,10 +10,12 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
 brew 'gh'
 brew 'git'
+brew 'mackup'
+brew 'mas'
+brew 'openjdk'
+brew 'openjdk@8'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'tree' # List directories in a tree structure
-brew 'mackup'
-brew 'mas' # Mac App Store manager
 brew 'svn'
 
 # Development
@@ -52,7 +54,6 @@ cask 'minecraft'
 cask 'macfuse'
 cask 'notion'
 cask 'obs'
-cask 'oracle-jdk'
 cask 'rocket'
 cask 'sensiblesidebuttons'
 cask 'sketch'
