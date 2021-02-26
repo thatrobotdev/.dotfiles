@@ -10,10 +10,6 @@ Dotfiles are configuration files like `.zshrc` or `.gitconfig` that configure pr
 
 Yeah! Keep in mind though that since these dotfiles contain configurations for me, you probably won't like what it does. Or the millions of applications installed in the [Brewfile](Brewfile).
 
-It's also probably broken, old, not configured for your hardware/software, etc. 
-
-I highly reccommend you look for other dotfiles intended for people to fork, or ones made with sensible defaults in mind.
-
 ## How it works
 
 * `install.conf.yaml` congigures [dotbot](https://github.com/anishathalye/dotbot), a tool that bootstraps dotfiles.
@@ -24,24 +20,30 @@ I highly reccommend you look for other dotfiles intended for people to fork, or 
 
 ## Install
 
-1. Log-in to the Mac App Store
+1. Log-in with your Apple ID to the Mac App Store (to let install script download things from the Mac App Store)
 
 2. Run the following code in Terminal:
 
 ```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/thatrobotdev/.dotfiles/main/install.sh)"
+
+
 # Install Brew + git if you don't have them installed
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
-# brew install git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
+
+brew install git
+
+# Clone repo, and run install script
 
 git clone https://github.com/thatrobotdev/.dotfiles.git ~/.dotfiles
 
 cd ~/.dotfiles
 
-./install
+./install.sh
 ```
 
 ## Commands
-Example usage: `./install [-h, -n]`
+Example usage: `./install.sh [-h, -n]`
 
 All errors are typed in RED, installing is denoted in GREEN, and logging starts with the "⚙" symbol.
 

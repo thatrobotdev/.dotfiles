@@ -40,21 +40,9 @@ do
       break
       ;;
   esac
-done  
+done
 
 echo "⚙ Setting up your Mac... (get help with \"-h\" or \"--help\")"
-
-# Check if Apple Command Line tools are installed, and prompt installation if not.
-if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
-   test -d "${xpath}" && test -x "${xpath}" ; then
-   echo "⚙ Apple Command Line Tools found."
-else
-  echo -e "${GREEN}⚙ Installing Apple Command Line Tools${NC}"
-  xcode-select --install
-  printf "${CYAN}⚙ Press any key to continue when you are done with installation.${NC}"
-  read -n 1 -s -r -p ""
-  echo;
-fi
 
 # Homebrew config if user doesn't pass a -nh or --no-homebrew argument
 if [ "$nohomebrew" ]; then
@@ -76,6 +64,18 @@ if [ "$nohomebrew" ]; then
 
     echo "⚙ Upgrade outdated casks and outdated, unpinned formulae..."
     brew upgrade
+
+    # Check if Apple Command Line tools are installed, and prompt installation if not.
+    if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
+      test -d "${xpath}" && test -x "${xpath}" ; then
+      echo "⚙ Apple Command Line Tools found."
+    else
+      echo -e "${GREEN}⚙ Installing Apple Command Line Tools${NC}"
+      xcode-select --install
+      printf "${CYAN}⚙ Press any key to continue when you are done with installation.${NC}"
+      read -n 1 -s -r -p ""
+      echo;
+    fi
 
     # Install all our dependencies with bundle (See Brewfile)
     echo "⚙ Installing all our dependencies with bundle..."
