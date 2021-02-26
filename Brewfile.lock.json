@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "e7c7390c877fa40c44c7c11732dab6656625840d"
+        "revision": "620a0771a2f53e847dc9a05b3a0aa4697bd98444"
       },
       "homebrew/cask-fonts": {
         "revision": "8ae7c5a1a7adc606688b685e8f4418d24326aa4a"
@@ -689,6 +689,12 @@
         "options": {
           "full_name": "freedom"
         }
+      },
+      "netdownloadhelpercoapp": {
+        "version": "1.6.0",
+        "options": {
+          "full_name": "netdownloadhelpercoapp"
+        }
       }
     },
     "mas": {
@@ -754,9 +760,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.2-84-gbab65d2",
+        "HOMEBREW_VERSION": "3.0.2-88-g8a3561e",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "b0ae7234f556a40f4855324e3b61a03ff01ac33e",
+        "Homebrew/homebrew-core": "2294242ed72a2aa1004ef8401d0004992765258f",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.1"
