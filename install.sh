@@ -52,7 +52,7 @@ if [ "$nohomebrew" ]; then
     echo "⚙ Starting Homebrew config..."
     
     # Check for Homebrew and install if we don't have it
-    if test ! $(which brew); then
+    if test ! "$(which brew)"; then
         echo -e "${GREEN}⚙ Installing Homebrew${NC}"
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     else
@@ -72,7 +72,7 @@ if [ "$nohomebrew" ]; then
     else
       echo -e "${GREEN}⚙ Installing Apple Command Line Tools${NC}"
       xcode-select --install
-      printf "${CYAN}⚙ Press any key to continue when you are done with installation.${NC}"
+      printf "%s⚙ Press any key to continue when you are done with installation.%s" "${CYAN}" "${NC}"
       read -n 1 -s -r -p ""
       echo;
     fi
@@ -83,15 +83,14 @@ if [ "$nohomebrew" ]; then
     brew bundle
 
     echo -e "${CYAN}⚙ Allow system Java wrappers to find JDKs (password may be required)${NC}"
-    sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-    sudo ln -sfn $(brew --prefix)/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
-
+    sudo ln -sfn "$(brew --prefix)"/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+    sudo ln -sfn "$(brew --prefix)"/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
 fi
 shift
 
 # Install Oh My ZSH (https://github.com/ohmyzsh/ohmyzsh) if it isn't installed 
 
-if [ ! -d $HOME/.oh-my-zsh ]; then
+if [ ! -d "$HOME"/.oh-my-zsh ]; then
   echo -e "${GREEN}⚙ Installing Oh My ZSH...${NC}"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 else

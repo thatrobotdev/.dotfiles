@@ -13,7 +13,8 @@ Yeah! Keep in mind though that since these dotfiles contain configurations for m
 ## How it works
 
 * `install.conf.yaml` congigures [dotbot](https://github.com/anishathalye/dotbot), a tool that bootstraps dotfiles.
-* `install` is the install script, with a little bit of glue to get everything down in one command, working with dotbot.
+* `install.sh` is the install script, with a little bit of glue to get everything down in one command, working with dotbot.
+* `pull.sh` aids in first-time installation (see [Install](##Install))
 * `.makeup.cfg` configures [Mackup](https://github.com/lra/mackup), a tool that backs up application settings and restores easily on fresh installs.
 * `.zshrc` configures [Oh My ZSH](https://ohmyz.sh/), a really great framewordk for managina a Zsh configuration.
 * `Brewfile` manages installed dependencies and programs that I would want to download on a fresh install.
@@ -22,24 +23,12 @@ Yeah! Keep in mind though that since these dotfiles contain configurations for m
 
 1. Log-in with your Apple ID to the Mac App Store (to let install script download things from the Mac App Store)
 
-2. Run the following code in Terminal:
+2. Make sure that a `~/.dotfiles` folder does not exist or is empty.
+
+3. Run the following code in Terminal:
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/thatrobotdev/.dotfiles/main/install.sh)"
-
-
-# Install Brew + git if you don't have them installed
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
-
-brew install git
-
-# Clone repo, and run install script
-
-git clone https://github.com/thatrobotdev/.dotfiles.git ~/.dotfiles
-
-cd ~/.dotfiles
-
-./install.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/thatrobotdev/.dotfiles/main/pull.sh)"
 ```
 
 ## Commands
@@ -52,7 +41,6 @@ Options:
 * `-n`, `--no-homebrew`: skips Homebrew config when passed
 
 ## TODO
-* Get install into one command
 * Automatically type in passwords when prompted?
 * Consolidate mackup and dotbot
 * Get working on windows
