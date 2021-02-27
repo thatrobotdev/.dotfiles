@@ -760,7 +760,7 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.2-96-g258a161",
+        "HOMEBREW_VERSION": "3.0.2-98-g86cbfd7",
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "4828caa4d7711613b6bd736ee7e704cfe5753813",
         "CLT": "12.4.0.0.1.1610135815",

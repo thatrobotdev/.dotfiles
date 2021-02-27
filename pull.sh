@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # Color
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-NC='\033[0m' # No Color
+readonly RED='\033[0;31m'
+readonly GREEN='\033[0;32m'
+readonly NC='\033[0m' # No Color
 
 echo "⚙ Welcome to first time set-up! This will download Homebrew, git, and clone the install script."
 echo "⚙ Make sure that no ~/.dotfiles folder exists, or that it is empty for the script to clone properly."
