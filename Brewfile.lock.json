@@ -2,19 +2,19 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "e8a67f81cc2e29dd522f151cd7afb4b69a44c607"
+        "revision": "05081b9fd0b9875513bb60319a60b5073d9f5e95"
       },
       "homebrew/cask-fonts": {
-        "revision": "2359ae13e5889923e1b7205038ba4e321e3258f1"
+        "revision": "a9de3a96d9352ff0c124155a038108fa8d45de2a"
       },
       "homebrew/cask-versions": {
-        "revision": "58a4a91cd8a5ec718892a36e6072d8337a27aa56"
+        "revision": "57383693da31c29ceab4b678fa12ea97ebcfe7bd"
       },
       "homebrew/bundle": {
         "revision": "b8b5bdb46cc45b7be5f305654a145473469d19d0"
       },
       "homebrew/cask-drivers": {
-        "revision": "01c5a1ff52f145bea4c0456b413e0357c089e36f"
+        "revision": "78f80346dd8173710a29c22e084f0e1e1f60c689"
       }
     },
     "brew": {
@@ -270,7 +270,7 @@
         }
       },
       "node": {
-        "version": "15.10.0",
+        "version": "15.10.0_1",
         "bottle": {
           "rebuild": 0,
           "cellar": ":any",
@@ -278,20 +278,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/node-15.10.0.arm64_big_sur.bottle.tar.gz",
-              "sha256": "d0d224a7b7da8c04a570b997f3a31708dd29ea9dc7653fa06683173357cc95f8"
+              "url": "https://homebrew.bintray.com/bottles/node-15.10.0_1.arm64_big_sur.bottle.tar.gz",
+              "sha256": "9343e279e67b8673cc3a12938041ea750f50d92ba697f7e61aa8016683670ced"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/node-15.10.0.big_sur.bottle.tar.gz",
-              "sha256": "663ca4edd1340ebe54e76e5936aa7313465f22bcbed6b73fca6dabca6ed5c3db"
+              "url": "https://homebrew.bintray.com/bottles/node-15.10.0_1.big_sur.bottle.tar.gz",
+              "sha256": "e65e9949ea956a0fa2f8c2f9a8285b2f2ef927874155248cb393966d6da4fe1d"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/node-15.10.0.catalina.bottle.tar.gz",
-              "sha256": "64bddf479fc37bdbdd57b5faaf27591a2b908070fccf3db3143e890b723a8a49"
+              "url": "https://homebrew.bintray.com/bottles/node-15.10.0_1.catalina.bottle.tar.gz",
+              "sha256": "45169cd291a661523325eab4d5889cadc27e1819a7d61da9800aa671c7778b67"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/node-15.10.0.mojave.bottle.tar.gz",
-              "sha256": "bd00315693409dd36371d1e03d67cb88768d8da2609fa807f26fe5808f126053"
+              "url": "https://homebrew.bintray.com/bottles/node-15.10.0_1.mojave.bottle.tar.gz",
+              "sha256": "de01f8a8b88a60925d5e77f2bb308cac905c4c620b9abbb078e6e03e6f36ff0e"
             }
           }
         }
@@ -523,7 +523,7 @@
         }
       },
       "notion": {
-        "version": "2.0.11",
+        "version": "2.0.14",
         "options": {
           "full_name": "notion"
         }
@@ -547,7 +547,7 @@
         }
       },
       "sketch": {
-        "version": "70.5,109233",
+        "version": "70.6,109241",
         "options": {
           "full_name": "sketch"
         }
@@ -613,13 +613,13 @@
         }
       },
       "zotero": {
-        "version": "5.0.95.3",
+        "version": "5.0.96",
         "options": {
           "full_name": "zotero"
         }
       },
       "zoom": {
-        "version": "5.5.12513.0205",
+        "version": "5.5.13130.0228",
         "options": {
           "full_name": "zoom"
         }
@@ -712,7 +712,7 @@
       },
       "HP Smart": {
         "id": "1474276998",
-        "version": "5.7.1"
+        "version": "5.7.2"
       },
       "GarageBand": {
         "id": "682658836",
@@ -752,7 +752,7 @@
       },
       "Plash": {
         "id": "1494023538",
-        "version": "1.7.0"
+        "version": "1.8.0"
       },
       "Due - Reminders & Timers": null
     }
@@ -760,9 +760,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.2-98-g86cbfd7",
+        "HOMEBREW_VERSION": "3.0.3-7-g37f7b9e",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "4828caa4d7711613b6bd736ee7e704cfe5753813",
+        "Homebrew/homebrew-core": "fe112d0e1b2f89cb15e38e2abfb1dde6923a10e3",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.1"
