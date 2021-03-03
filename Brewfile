@@ -61,6 +61,7 @@ brew 'openjdk'
 brew 'openjdk@8'
 cask 'rocket'
 cask 'sensiblesidebuttons'
+brew 'youtube-dl'
 
 ## Audio + Video Recording/Editing
 brew 'ffmpeg'
