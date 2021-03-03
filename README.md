@@ -12,12 +12,12 @@ Yeah! Keep in mind though that since these dotfiles contain configurations for m
 
 ## How it works
 
-* `install.conf.yaml` congigures [dotbot](https://github.com/anishathalye/dotbot), a tool that bootstraps dotfiles.
-* `install.sh` is the install script, with a little bit of glue to get everything down in one command, working with dotbot.
-* `pull.sh` aids in first-time installation (see [Install](##Install))
-* `.makeup.cfg` configures [Mackup](https://github.com/lra/mackup), a tool that backs up application settings and restores easily on fresh installs.
-* `.zshrc` configures [Oh My ZSH](https://ohmyz.sh/), a really great framewordk for managina a Zsh configuration.
-* `Brewfile` manages installed dependencies and programs that I would want to download on a fresh install.
+- `install.conf.yaml` congigures [dotbot](https://github.com/anishathalye/dotbot), a tool that bootstraps dotfiles.
+- `install.sh` is the install script, with a little bit of glue to get everything down in one command, working with dotbot.
+- `pull.sh` aids in first-time installation (see [Install](##Install))
+- `.makeup.cfg` configures [Mackup](https://github.com/lra/mackup), a tool that backs up application settings and restores easily on fresh installs.
+- `.zshrc` configures [Oh My ZSH](https://ohmyz.sh/), a really great framewordk for managina a Zsh configuration.
+- `Brewfile` manages installed dependencies and programs that I would want to download on a fresh install.
 
 ## Install
 
@@ -32,19 +32,20 @@ Yeah! Keep in mind though that since these dotfiles contain configurations for m
 ```
 
 ## Commands
+
 Example usage: `./install.sh [-h, -n]`
 
 All errors are typed in RED, installing is denoted in GREEN, and logging starts with the "⚙" symbol.
 
 Options:
 
-* `-h`, `--help`: displays description and options
-* `-n`, `--no-homebrew`: skips Homebrew config when passed
+- `-h`, `--help`: displays description and options
+- `-n`, `--no-homebrew`: skips Homebrew config when passed
 
 ## TODO
 
-* Automatically type in passwords when prompted?
-* Consolidate mackup and dotbot
-* Get working on windows
-* Clean up script for the ordering of items in the Brewfile
-* Automatically assemble global .gitignore_global from https://github.com/github/gitignore
+- Automatically type in passwords when prompted?
+- Consolidate mackup and dotbot
+- Get working on windows
+- Clean up script for the ordering of items in the Brewfile
+- Automatically assemble global .gitignore_global from <https://github.com/github/gitignore>
