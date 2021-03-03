@@ -2,6 +2,7 @@
 
 # Color
 readonly GREEN='\033[0;32m'
+readonly YELLOW='\033[1;33m'
 readonly RED='\033[0;31m'
 readonly CYAN='\033[0;36m'
 readonly NC='\033[0m' # No Color
@@ -96,6 +97,21 @@ if [ ! -d "$HOME"/.oh-my-zsh ]; then
 else
   echo "⚙ Oh My ZSH found."
 fi
+
+echo "Downloading/Updating iTerm2 Color Preset"
+
+readonly ITERM2_MATERIAL_DESIGN_DIR='iterm2-material-design' # No Color
+
+git -C "${ITERM2_MATERIAL_DESIGN_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${ITERM2_MATERIAL_DESIGN_DIR}"
+
+echo "⚙ Installing iTerm2 Color Preset..."
+open iterm2-material-design/material-design-colors.itermcolors
+
+echo -e "${YELLOW}⚙ To finish set-up for the color preset, follow these instructions:${NC}"
+echo "1. Go to iTerm2 > Preferences > Profiles > Colors"
+echo "2. Click Color Presets..."
+echo "3. Select the material-design-colors from Load Presets"
 
 # Dotbot
 echo "⚙ Booting up Dotbot..."

@@ -46,6 +46,7 @@ cask 'authy'
 
 ## Core Utilities
 brew 'coreutils'
+brew 'gcc'
 brew 'pkg-config'
 brew 'tree'
 
@@ -62,6 +63,11 @@ brew 'openjdk@8'
 cask 'rocket'
 cask 'sensiblesidebuttons'
 brew 'youtube-dl'
+
+# Terminal
+brew 'antigen'
+cask 'iterm2'
+brew 'zsh'
 
 ## Audio + Video Recording/Editing
 brew 'ffmpeg'
