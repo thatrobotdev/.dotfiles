@@ -37,10 +37,12 @@ Example usage: `./install.sh [-h, -n]`
 All errors are typed in RED, installing is denoted in GREEN, and logging starts with the "⚙" symbol.
 
 Options:
+
 * `-h`, `--help`: displays description and options
 * `-n`, `--no-homebrew`: skips Homebrew config when passed
 
 ## TODO
+
 * Automatically type in passwords when prompted?
 * Consolidate mackup and dotbot
 * Get working on windows

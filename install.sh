@@ -7,39 +7,38 @@ readonly RED='\033[0;31m'
 readonly CYAN='\033[0;36m'
 readonly NC='\033[0m' # No Color
 
-display_help () {
+display_help() {
   echo "Example usage:"
   echo "  ./install [-h, -n]"
-  echo;
+  echo
   echo "Installs or updates configuration dotfiles for macOS."
   echo -e "All errors are typed in ${RED}RED${NC}, installing is denoted in ${GREEN}GREEN${NC}, and logging starts with the \"⚙\" symbol."
-  echo;
+  echo
   echo "Options:"
   echo "  -h, --help          displays description and options"
   echo "  -n, --no-homebrew   skips Homebrew config when passed"
 }
 
-while :
-do
+while :; do
   case "$1" in
-    -h | --help)
-      display_help
-      exit 0
-      ;;
-    -n | --no-homebrew)
-      nohomebrew="nohomebrew"
-      shift
-      ;;
-    # --) # End of all options
-    #   shift
-    #   break;
-    -*)
-      echo -e "${RED}⚙ Error: Unknown option: $1" >&2
-      exit 1
-      ;;
-    *) # No more options
-      break
-      ;;
+  -h | --help)
+    display_help
+    exit 0
+    ;;
+  -n | --no-homebrew)
+    nohomebrew="nohomebrew"
+    shift
+    ;;
+  # --) # End of all options
+  #   shift
+  #   break;
+  -*)
+    echo -e "${RED}⚙ Error: Unknown option: $1" >&2
+    exit 1
+    ;;
+  *) # No more options
+    break
+    ;;
   esac
 done
 
@@ -47,49 +46,49 @@ echo "⚙ Setting up your Mac... (get help with \"-h\" or \"--help\")"
 
 # Homebrew config if user doesn't pass a -nh or --no-homebrew argument
 if [ "$nohomebrew" ]; then
-    echo "⚙ Skipping Homebrew recipe update."
-    else
+  echo "⚙ Skipping Homebrew recipe update."
+else
 
-    echo "⚙ Starting Homebrew config..."
-    
-    # Check for Homebrew and install if we don't have it
-    if test ! "$(which brew)"; then
-        echo -e "${GREEN}⚙ Installing Homebrew${NC}"
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    else
-      echo "⚙ Homebrew found."
-    fi
-    
-    echo "⚙ Updating Homebrew..."
-    brew update
+  echo "⚙ Starting Homebrew config..."
 
-    echo "⚙ Upgrade outdated casks and outdated, unpinned formulae..."
-    brew upgrade
+  # Check for Homebrew and install if we don't have it
+  if test ! "$(which brew)"; then
+    echo -e "${GREEN}⚙ Installing Homebrew${NC}"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  else
+    echo "⚙ Homebrew found."
+  fi
 
-    # Check if Apple Command Line tools are installed, and prompt installation if not.
-    if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
-      test -d "${xpath}" && test -x "${xpath}" ; then
-      echo "⚙ Apple Command Line Tools found."
-    else
-      echo -e "${GREEN}⚙ Installing Apple Command Line Tools${NC}"
-      xcode-select --install
-      printf "%s⚙ Press any key to continue when you are done with installation.%s" "${CYAN}" "${NC}"
-      read -n 1 -s -r -p ""
-      echo;
-    fi
+  echo "⚙ Updating Homebrew..."
+  brew update
 
-    # Install all our dependencies with bundle (See Brewfile)
-    echo "⚙ Installing all our dependencies with bundle..."
-    brew tap homebrew/bundle
-    brew bundle
+  echo "⚙ Upgrade outdated casks and outdated, unpinned formulae..."
+  brew upgrade
 
-    echo -e "${CYAN}⚙ Allow system Java wrappers to find JDKs (password may be required)${NC}"
-    sudo ln -sfn "$(brew --prefix)"/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-    sudo ln -sfn "$(brew --prefix)"/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
+  # Check if Apple Command Line tools are installed, and prompt installation if not.
+  if type xcode-select >&- && xpath=$(xcode-select --print-path) &&
+    test -d "${xpath}" && test -x "${xpath}"; then
+    echo "⚙ Apple Command Line Tools found."
+  else
+    echo -e "${GREEN}⚙ Installing Apple Command Line Tools${NC}"
+    xcode-select --install
+    printf "%s⚙ Press any key to continue when you are done with installation.%s" "${CYAN}" "${NC}"
+    read -n 1 -s -r -p ""
+    echo
+  fi
+
+  # Install all our dependencies with bundle (See Brewfile)
+  echo "⚙ Installing all our dependencies with bundle..."
+  brew tap homebrew/bundle
+  brew bundle
+
+  echo -e "${CYAN}⚙ Allow system Java wrappers to find JDKs (password may be required)${NC}"
+  sudo ln -sfn "$(brew --prefix)"/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+  sudo ln -sfn "$(brew --prefix)"/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
 fi
 shift
 
-# Install Oh My ZSH (https://github.com/ohmyzsh/ohmyzsh) if it isn't installed 
+# Install Oh My ZSH (https://github.com/ohmyzsh/ohmyzsh) if it isn't installed
 
 if [ ! -d "$HOME"/.oh-my-zsh ]; then
   echo -e "${GREEN}⚙ Installing Oh My ZSH...${NC}"
