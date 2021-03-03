@@ -97,6 +97,8 @@ else
   echo "⚙ Oh My ZSH found."
 fi
 
+# Configuring iTerm2
+
 echo "Downloading/Updating iTerm2 Color Preset"
 
 readonly ITERM2_MATERIAL_DESIGN_DIR='iterm2-material-design' # No Color
@@ -111,6 +113,27 @@ echo -e "${YELLOW}⚙ To finish set-up for the color preset, follow these instru
 echo "1. Go to iTerm2 > Preferences > Profiles > Colors"
 echo "2. Click Color Presets..."
 echo "3. Select the material-design-colors from Load Presets"
+
+echo "⚙ Installing/Updating VS Code extensions"
+
+declare -a extensions=(
+  "DavidAnson.vscode-markdownlint"
+  "dbaeumer.vscode-eslint"
+  "eg2.vscode-npm-script"
+  "esbenp.prettier-vscode"
+  "foxundermoon.shell-format"
+  "GitHub.vscode-pull-request-github"
+  "kiteco.kite"
+  "ms-vscode.cpptools"
+  "rebornix.ruby"
+  "timonwong.shellcheck"
+  "vsciot-vscode.vscode-arduino"
+  "wingrunr21.vscode-ruby"
+)
+
+for extension in "${extensions[@]}"; do
+  code --install-extension "${extension}" --force
+done
 
 # Dotbot
 echo "⚙ Booting up Dotbot..."
