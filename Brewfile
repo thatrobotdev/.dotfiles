@@ -128,6 +128,7 @@ cask 'sketch'
 ## Gaming
 cask 'lunar-client'
 cask 'minecraft'
+cask 'shadow'
 cask 'steam'
 
 ## Music
