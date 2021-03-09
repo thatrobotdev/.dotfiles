@@ -1,29 +1,69 @@
-#!/usr/bin/env bash
+#!/bin/bash
+set -u
 
 # Color
 readonly GREEN='\033[0;32m'
-readonly YELLOW='\033[1;33m'
 readonly RED='\033[0;31m'
 readonly CYAN='\033[0;36m'
-readonly NC='\033[0m' # No Color
+readonly NC='\033[0m' # No Color / Color Reset
 
 display_help() {
   echo "Example usage:"
-  echo "  ./install [-h, -n]"
+  echo "  ./install [command-line arguments]"
   echo
   echo "Installs or updates configuration dotfiles for macOS."
-  echo -e "All errors are typed in ${RED}RED${NC}, installing is denoted in ${GREEN}GREEN${NC}, and logging starts with the \"⚙\" symbol."
+  echo "All logging from this script will be preceeded by a \"⚙\" character"
+  echo -e "If the script needs to get your attention, messages will be in ${CYAN}CYAN${NC}. Errors are ${RED}RED${NC}, and a new install is usually ${GREEN}GREEN${NC}."
   echo
   echo "Options:"
   echo "  -h, --help          displays description and options"
   echo "  -n, --no-homebrew   skips Homebrew config when passed"
-  echo "  -f --first-time     incorporates first time set-up,"
-  echo "                      run for the first time you use/update"
-  echo "                      the install script."
+  echo "  -f --first-time     configured apps and runs scripts for"
+  echo "                      first-time set-up, run when running"
+  echo "                      the install script for the first time."
 }
 
+abort() {
+  printf "${RED}⚙ Error: %s\n${NC}" "$@"
+  exit 1
+}
+
+chomp() { # Remove newline characters from the end of any string
+  printf "%s" "${1/"$'\n'"/}"
+}
+
+message() {
+  printf "⚙ %s\n" "$(chomp "$1")"
+}
+
+log_install() {
+  printf "${GREEN}⚙ %s\n${NC}" "$(chomp "$1")"
+}
+
+log_attention() {
+  printf "${CYAN}⚙ %s\n${NC}" "$(chomp "$1")"
+  ring_bell
+}
+
+ring_bell() {         # Use the shell's audible bell
+  if [[ -t 1 ]]; then # If attached to a terminal
+    printf "\a"
+  fi
+}
+
+# Abort if Bash isn't installed
+if [ -z "${BASH_VERSION:-}" ]; then
+  abort "Bash is required to interpret this script."
+fi
+
+# Abort if not on macOS
+OS="$(uname)"
+if [[ "$OS" != "Darwin" ]]; then
+  abort "This script only supports macOS."
+fi
+
 while :; do
-  case "$1" in
+  case "${1-}" in
   -h | --help)
     display_help
     exit 0
@@ -40,8 +80,7 @@ while :; do
   #   shift
   #   break;
   -*)
-    echo -e "${RED}⚙ Error: Unknown option: $1" >&2
-    exit 1
+    abort "Unknown option: ${1-}" >&2
     ;;
   *) # No more options
     break
@@ -49,47 +88,47 @@ while :; do
   esac
 done
 
-echo "⚙ Setting up your Mac... (get help with \"-h\" or \"--help\")"
+message "Setting up your Mac... (get help with \"-h\" or \"--help\")"
 
 # Homebrew config if user doesn't pass a -nh or --no-homebrew argument
-if [ "$nohomebrew" ]; then
-  echo "⚙ Skipping Homebrew recipe update."
+if [ "${nohomebrew-}" ]; then
+  message "Skipping Homebrew recipe update."
 else
 
-  echo "⚙ Starting Homebrew config..."
+  message "Starting Homebrew config..."
 
   # Check for Homebrew and install if we don't have it
   if test ! "$(which brew)"; then
-    echo -e "${GREEN}⚙ Installing Homebrew${NC}"
+    log_install "Installing Homebrew"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   else
-    echo "⚙ Homebrew found."
+    message "Homebrew found."
   fi
 
-  echo "⚙ Updating Homebrew..."
+  message "Updating Homebrew..."
   brew update
 
-  echo "⚙ Upgrade outdated casks and outdated, unpinned formulae..."
+  message "Upgrading outdated casks and outdated, unpinned formulae..."
   brew upgrade
 
   # Check if Apple Command Line tools are installed, and prompt installation if not.
   if type xcode-select >&- && xpath=$(xcode-select --print-path) &&
     test -d "${xpath}" && test -x "${xpath}"; then
-    echo "⚙ Apple Command Line Tools found."
+    message "Apple Command Line Tools found."
   else
-    echo -e "${GREEN}⚙ Installing Apple Command Line Tools${NC}"
+    log_install "Installing Apple Command Line Tools"
     xcode-select --install
-    printf "%s⚙ Press any key to continue when you are done with installation.%s" "${CYAN}" "${NC}"
+    log_attention "Press any key to continue when you are done with installation."
     read -n 1 -s -r -p ""
     echo
   fi
 
   # Install all our dependencies with bundle (See Brewfile)
-  echo "⚙ Installing all our dependencies with bundle..."
+  message "Installing all our dependencies with bundle..."
   brew tap homebrew/bundle
   brew bundle
 
-  echo -e "${CYAN}⚙ Allow system Java wrappers to find JDKs (password may be required)${NC}"
+  log_attention "Allow system Java wrappers to find JDKs (password may be required)"
   sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
   sudo ln -sfn /usr/local/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
 
@@ -99,13 +138,13 @@ shift
 # Install Oh My ZSH (https://github.com/ohmyzsh/ohmyzsh) if it isn't installed
 
 if [ ! -d "$HOME"/.oh-my-zsh ]; then
-  echo -e "${GREEN}⚙ Installing Oh My ZSH...${NC}"
+  log_install "Installing Oh My ZSH..."
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 else
-  echo "⚙ Oh My ZSH found."
+  message "Oh My ZSH found."
 fi
 
-if [ "$firsttime" ]; then
+if [ "${firsttime-}" ]; then
   # Configuring iTerm2
 
   echo "Installing/Updating iTerm2 Color Preset"
@@ -115,10 +154,10 @@ if [ "$firsttime" ]; then
   git -C "${ITERM2_MATERIAL_DESIGN_DIR}" submodule sync --quiet --recursive
   git submodule update --init --recursive "${ITERM2_MATERIAL_DESIGN_DIR}"
 
-  echo -e "${GREEN}⚙ Installing iTerm2 Color Preset...${NC}"
+  log_install "Installing iTerm2 Color Preset..."
   open iterm2-material-design/material-design-colors.itermcolors
 
-  echo -e "${YELLOW}⚙ To finish set-up for the color preset, follow these instructions:${NC}"
+  log_attention "To finish set-up for the color preset, follow these instructions:"
   echo "1. Go to iTerm2 > Preferences > Profiles > Colors"
   echo "2. Click Color Presets..."
   echo "3. Select the material-design-colors from Load Presets"
@@ -127,7 +166,7 @@ if [ "$firsttime" ]; then
   curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 fi
 
-echo "⚙ Installing/Updating VS Code extensions"
+message "Installing/Updating VS Code extensions"
 declare -a extensions=(
   "DavidAnson.vscode-markdownlint"
   "dbaeumer.vscode-eslint"
@@ -148,8 +187,9 @@ for extension in "${extensions[@]}"; do
 done
 
 # Dotbot
-echo "⚙ Booting up Dotbot..."
+message "Booting up Dotbot..."
 
+set +u
 ########################################################
 ### FROM DOTBOT INSTALL FILE
 
@@ -168,12 +208,14 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 
 ########################################################
+set -u
 
 # Restoring macOS configs with mackup
-echo "⚙ Restoring macOS configs with mackup..."
+message "Restoring macOS configs with mackup..."
 mackup restore
 
-echo "⚙ Backing up current configuration..."
+message "Backing up current configuration..."
 mackup backup
 
-echo "⚙ Ayy we good"
+message "Ayy we good"
+ring_bell

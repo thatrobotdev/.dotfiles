@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "54a0cd0d4b5a29d6492156f75599e88b3dfdafca"
+        "revision": "889eb47d8c128261edc4ffacd165b2e85d91fd1a"
       },
       "homebrew/cask-fonts": {
         "revision": "9899ab349852a15fbc634721356bec10e05d5f11"
@@ -564,7 +564,7 @@
         }
       },
       "microsoft-edge": {
-        "version": "89.0.774.45",
+        "version": "89.0.774.48",
         "options": {
           "full_name": "microsoft-edge"
         }
@@ -869,7 +869,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.0.4-64-g31a4989",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "82cf5b6f7725f2e7ad71fd11db19da54a54d291a",
+        "Homebrew/homebrew-core": "e8d370ac4156cbae40bdebd90de9f0dfea30870b",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.2"

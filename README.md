@@ -31,11 +31,13 @@ Yeah! Keep in mind though that since these dotfiles contain configurations for m
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/thatrobotdev/.dotfiles/main/pull.sh)"
 ```
 
-## Commands
+## Usage
 
 Example usage: `./install.sh [command-line arguments]`
 
-All errors are typed in RED, installing is denoted in GREEN, and logging starts with the "⚙" symbol.
+All logging from this script will be preceeded by a "⚙" character
+
+If the script needs to get your attention, messages will be in CYAN$. Errors are RED$, and a new install is usually GREEN$.
 
 Options:
 
@@ -45,8 +47,6 @@ Options:
 
 ## TODO
 
-- Automatically type in passwords when prompted?
 - Consolidate mackup and dotbot
 - Get working on windows
-- Clean up script for the ordering of items in the Brewfile
 - Automatically assemble global .gitignore_global from <https://github.com/github/gitignore>
