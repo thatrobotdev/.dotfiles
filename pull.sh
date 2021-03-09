@@ -25,4 +25,4 @@ git clone https://github.com/thatrobotdev/.dotfiles.git ~/.dotfiles
 
 cd ~/.dotfiles || echo -e "${RED} 'cd ~/.dotfiles' failed." && exit 1
 
-./install.sh
+./install.sh -f

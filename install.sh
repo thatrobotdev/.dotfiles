@@ -17,6 +17,9 @@ display_help() {
   echo "Options:"
   echo "  -h, --help          displays description and options"
   echo "  -n, --no-homebrew   skips Homebrew config when passed"
+  echo "  -f --first-time     incorporates first time set-up,"
+  echo "                      run for the first time you use/update"
+  echo "                      the install script."
 }
 
 while :; do
@@ -26,7 +29,11 @@ while :; do
     exit 0
     ;;
   -n | --no-homebrew)
-    nohomebrew="nohomebrew"
+    readonly nohomebrew="nohomebrew"
+    shift
+    ;;
+  -f | --first-time)
+    readonly firsttime="firsttime"
     shift
     ;;
   # --) # End of all options
@@ -98,25 +105,29 @@ else
   echo "⚙ Oh My ZSH found."
 fi
 
-# Configuring iTerm2
+if [ "$firsttime" ]; then
+  # Configuring iTerm2
 
-echo "Downloading/Updating iTerm2 Color Preset"
+  echo "Installing/Updating iTerm2 Color Preset"
 
-readonly ITERM2_MATERIAL_DESIGN_DIR='iterm2-material-design' # No Color
+  readonly ITERM2_MATERIAL_DESIGN_DIR='iterm2-material-design' # No Color
 
-git -C "${ITERM2_MATERIAL_DESIGN_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${ITERM2_MATERIAL_DESIGN_DIR}"
+  git -C "${ITERM2_MATERIAL_DESIGN_DIR}" submodule sync --quiet --recursive
+  git submodule update --init --recursive "${ITERM2_MATERIAL_DESIGN_DIR}"
 
-echo "⚙ Installing iTerm2 Color Preset..."
-open iterm2-material-design/material-design-colors.itermcolors
+  echo -e "${GREEN}⚙ Installing iTerm2 Color Preset...${NC}"
+  open iterm2-material-design/material-design-colors.itermcolors
 
-echo -e "${YELLOW}⚙ To finish set-up for the color preset, follow these instructions:${NC}"
-echo "1. Go to iTerm2 > Preferences > Profiles > Colors"
-echo "2. Click Color Presets..."
-echo "3. Select the material-design-colors from Load Presets"
+  echo -e "${YELLOW}⚙ To finish set-up for the color preset, follow these instructions:${NC}"
+  echo "1. Go to iTerm2 > Preferences > Profiles > Colors"
+  echo "2. Click Color Presets..."
+  echo "3. Select the material-design-colors from Load Presets"
+
+  echo "Downloading iTerm 2 Shell Integration"
+  curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+fi
 
 echo "⚙ Installing/Updating VS Code extensions"
-
 declare -a extensions=(
   "DavidAnson.vscode-markdownlint"
   "dbaeumer.vscode-eslint"

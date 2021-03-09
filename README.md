@@ -33,7 +33,7 @@ Yeah! Keep in mind though that since these dotfiles contain configurations for m
 
 ## Commands
 
-Example usage: `./install.sh [-h, -n]`
+Example usage: `./install.sh [command-line arguments]`
 
 All errors are typed in RED, installing is denoted in GREEN, and logging starts with the "⚙" symbol.
 
@@ -41,6 +41,7 @@ Options:
 
 - `-h`, `--help`: displays description and options
 - `-n`, `--no-homebrew`: skips Homebrew config when passed
+- `-f`, `--first-time`: configures apps and runs scripts for first time set-up, run when running the install script for the first time
 
 ## TODO
 

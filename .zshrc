@@ -38,3 +38,6 @@ antigen theme robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
+
+# Add iTerm 2 Shell Integration
+source ~/.iterm2_shell_integration.zsh
