@@ -13,7 +13,9 @@ display_help() {
   echo
   echo "Installs or updates configuration dotfiles for macOS."
   echo "All logging from this script will be preceeded by a \"⚙\" character"
-  echo -e "If the script needs to get your attention, messages will be in ${CYAN}CYAN${NC}. Errors are ${RED}RED${NC}, and a new install is usually ${GREEN}GREEN${NC}."
+  echo -e "If the script needs to get your attention, messages will be in ${CYAN}CYAN${NC}"
+  echo "(if your terminal supports it, you'll hear a sound)."
+  echo -e "Errors are ${RED}RED${NC}, and a new install is usually ${GREEN}GREEN${NC}."
   echo
   echo "Options:"
   echo "  -h, --help          displays description and options"
@@ -189,11 +191,10 @@ done
 # Dotbot
 message "Booting up Dotbot..."
 
-set +u
 ########################################################
 ### FROM DOTBOT INSTALL FILE
 
-set -e
+set -e +u
 
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
@@ -207,8 +208,9 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 
+set +e -u
+
 ########################################################
-set -u
 
 # Restoring macOS configs with mackup
 message "Restoring macOS configs with mackup..."

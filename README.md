@@ -37,7 +37,7 @@ Example usage: `./install.sh [command-line arguments]`
 
 All logging from this script will be preceeded by a "⚙" character
 
-If the script needs to get your attention, messages will be in CYAN$. Errors are RED$, and a new install is usually GREEN$.
+If the script needs to get your attention, messages will be in CYAN (if your terminal supports it, you'll hear a sound). Errors are RED, and a new install is usually GREEN.
 
 Options:
 
