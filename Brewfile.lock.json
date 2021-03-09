@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "029122c3778ae04644cb7a6a408c9c27069674fb"
+        "revision": "9971f8d35ab414efb8212095665f0ea4d20922ee"
       },
       "homebrew/cask-fonts": {
         "revision": "9899ab349852a15fbc634721356bec10e05d5f11"
       },
       "homebrew/cask-versions": {
-        "revision": "fc3589743b4cd6ad179b6e64ed6da695f1666007"
+        "revision": "6a15430a59fa3dc0b07253447870bea5de19d558"
       },
       "homebrew/bundle": {
         "revision": "3fbca9f51db8e7255f4b2f48daba1e04a2d99ad6"
@@ -450,7 +450,7 @@
         }
       },
       "adobe-creative-cloud": {
-        "version": "5.3.1.470",
+        "version": "5.4.1.534",
         "options": {
           "full_name": "adobe-creative-cloud"
         }
@@ -861,15 +861,19 @@
         "id": "1494023538",
         "version": "1.8.0"
       },
-      "Due - Reminders & Timers": null
+      "Due - Reminders & Timers": null,
+      "Day One": {
+        "id": "1055511498",
+        "version": "5.9.1"
+      }
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.4-64-g31a4989",
+        "HOMEBREW_VERSION": "3.0.5",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "e8d370ac4156cbae40bdebd90de9f0dfea30870b",
+        "Homebrew/homebrew-core": "45969324a1fca24096696b93e50022bc4cb05920",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.2"
