@@ -92,6 +92,7 @@ cask 'alfred'
 mas 'Due - Reminders & Timers', id: 524373870
 cask 'hazeover'
 cask 'notion'
+mas 'Streaks', id: 1493327990
 cask 'thingsmacsandboxhelper'
 mas 'Things', id: 904280696
 cask 'ti-connect-ce'
