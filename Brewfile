@@ -64,6 +64,7 @@ brew 'node'
 brew 'openjdk'
 brew 'openjdk@8'
 mas 'Plash', id: 1494023538
+cask 'qbittorrent'
 cask 'rocket'
 cask 'sensiblesidebuttons'
 brew 'youtube-dl'

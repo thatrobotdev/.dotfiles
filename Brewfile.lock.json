@@ -2,19 +2,19 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "9971f8d35ab414efb8212095665f0ea4d20922ee"
+        "revision": "9254be30499072e6f1762e2aa6768d74aaf892fc"
       },
       "homebrew/cask-fonts": {
         "revision": "9899ab349852a15fbc634721356bec10e05d5f11"
       },
       "homebrew/cask-versions": {
-        "revision": "6a15430a59fa3dc0b07253447870bea5de19d558"
+        "revision": "af7fb03ddc28fe1caf75a306f2f5c0cf8fa016e1"
       },
       "homebrew/bundle": {
         "revision": "3fbca9f51db8e7255f4b2f48daba1e04a2d99ad6"
       },
       "homebrew/cask-drivers": {
-        "revision": "0abe09f7c66968738f5c969fb5b17a4081d987a6"
+        "revision": "5ab86d66a58e384d99d5aad0e0122a656a68dd0f"
       }
     },
     "brew": {
@@ -100,7 +100,7 @@
         }
       },
       "git": {
-        "version": "2.30.1",
+        "version": "2.30.2",
         "bottle": {
           "rebuild": 0,
           "cellar": "/usr/local/Cellar",
@@ -108,20 +108,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.arm64_big_sur.bottle.tar.gz",
-              "sha256": "53c147ae99043706072a5ada0ecf764a8f386fb4f3afa7aa20546cc33a349d84"
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.2.arm64_big_sur.bottle.tar.gz",
+              "sha256": "b480fcf0ecae4ded1f62e3aae6b8363f156a454eea58a833e7ce469eba7d761a"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.big_sur.bottle.tar.gz",
-              "sha256": "c0be5c5895bd3a85bd83953fd9f6fec3864d8ea419b4678b43afaac7217b9853"
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.2.big_sur.bottle.tar.gz",
+              "sha256": "080017fabfad8c0047cbb2149b09a81e8a66f15253c58cd0f931f5dca7c4cb69"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.catalina.bottle.tar.gz",
-              "sha256": "0dd5f43dc263da3d87a83216392fedd96774bd0c9f89e2dc717c549b1803e8d6"
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.2.catalina.bottle.tar.gz",
+              "sha256": "4a1ab36624163ad62af82e8175e51019bfcea1b4657353b4d73493c5ca773b6f"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.30.1.mojave.bottle.tar.gz",
-              "sha256": "c84740ee72f1909fe019bba32ccf265b393df5c2fbd5d31886cca5904928f1b9"
+              "url": "https://homebrew.bintray.com/bottles/git-2.30.2.mojave.bottle.tar.gz",
+              "sha256": "24547de9d51b08f78f128961d3c728853c3a828d1354234e1dcae5b26333338b"
             }
           }
         }
@@ -456,7 +456,7 @@
         }
       },
       "anki": {
-        "version": "2.1.41",
+        "version": "2.1.42",
         "options": {
           "full_name": "anki"
         }
@@ -486,7 +486,7 @@
         }
       },
       "cloudflare-warp": {
-        "version": "1.3.58,20210202.19",
+        "version": "1.3.206,20210305.5",
         "options": {
           "full_name": "cloudflare-warp"
         }
@@ -510,7 +510,7 @@
         }
       },
       "firefox": {
-        "version": "86.0",
+        "version": "86.0.1",
         "options": {
           "full_name": "firefox"
         }
@@ -522,7 +522,7 @@
         }
       },
       "github": {
-        "version": "2.6.5-1995d7d8",
+        "version": "2.6.6-74281ffb",
         "options": {
           "full_name": "github"
         }
@@ -558,7 +558,7 @@
         }
       },
       "kite": {
-        "version": "0.20210212.0",
+        "version": "0.20210225.0",
         "options": {
           "full_name": "kite"
         }
@@ -612,7 +612,7 @@
         }
       },
       "notion": {
-        "version": "2.0.15",
+        "version": "2.0.16",
         "options": {
           "full_name": "notion"
         }
@@ -672,7 +672,7 @@
         }
       },
       "twitch": {
-        "version": "8.59.0",
+        "version": "8.60.1",
         "options": {
           "full_name": "twitch"
         }
@@ -802,6 +802,12 @@
         "options": {
           "full_name": "shadow"
         }
+      },
+      "qbittorrent": {
+        "version": "4.3.3",
+        "options": {
+          "full_name": "qbittorrent"
+        }
       }
     },
     "mas": {
@@ -871,12 +877,12 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.5",
+        "HOMEBREW_VERSION": "3.0.5-18-g433cd83",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "45969324a1fca24096696b93e50022bc4cb05920",
-        "CLT": "12.4.0.0.1.1610135815",
+        "Homebrew/homebrew-core": "77474e6293025aeea3a7e25e86883967eaa02675",
+        "CLT": "",
         "Xcode": "12.4",
-        "macOS": "11.2.2"
+        "macOS": "11.2.3"
       }
     }
   }
