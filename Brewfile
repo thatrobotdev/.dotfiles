@@ -109,6 +109,7 @@ mas 'Pages', id: 409201541
 ## Programming
 cask 'arduino'
 mas 'Developer', id: 640199958
+mas 'Git Streaks for GitHub', id: 1525795950
 cask 'inky'
 cask 'kite'
 cask 'visual-studio-code'

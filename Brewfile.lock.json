@@ -8,7 +8,7 @@
         "revision": "9899ab349852a15fbc634721356bec10e05d5f11"
       },
       "homebrew/cask-versions": {
-        "revision": "7cbc8c2403d524b767cbf06ece32d681a84d2aea"
+        "revision": "d6d0cbd2f377f1b6b510635e24b3fbd32749c5b9"
       },
       "homebrew/bundle": {
         "revision": "3fbca9f51db8e7255f4b2f48daba1e04a2d99ad6"
@@ -872,7 +872,11 @@
         "id": "1055511498",
         "version": "5.9.1"
       },
-      "Streaks": null
+      "Streaks": {
+        "id": "1493327990",
+        "version": "6.1.3"
+      },
+      "Git Streaks for GitHub": null
     }
   },
   "system": {
