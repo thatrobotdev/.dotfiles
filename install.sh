@@ -177,6 +177,7 @@ declare -a extensions=(
   "foxundermoon.shell-format"
   "GitHub.vscode-pull-request-github"
   "kiteco.kite"
+  "ms-python.python"
   "ms-vscode.cpptools"
   "rebornix.ruby"
   "timonwong.shellcheck"
