@@ -19,7 +19,7 @@
 # * Art: clip-studio-paint
 # * VPN: cloudflare-warp
 # * Cloud Storage: google-backup-and-sync, google-drive, cryptomator
-# * Video, audio, and text chat: discord, slack, zoom, microsoft-teams
+# * Video, audio, and text chat: discord, element, slack, zoom, microsoft-teams
 # * Design: figma, sketch
 # * Gaming: lunar-client, minecraft, steam
 # * Music: GarageBand, spotify
@@ -137,6 +137,7 @@ cask 'cryptomator'
 
 ## Video, audio, and text chat
 cask 'discord'
+cask 'element'
 cask 'slack'
 cask 'zoom'
 cask 'microsoft-teams'

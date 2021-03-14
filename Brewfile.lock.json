@@ -2,19 +2,19 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "e7250c0d71ef474e9a932a39bc4595c2796a0138"
+        "revision": "af285cfb1c3000a2b45f21aa94cc08988c0ba4ae"
       },
       "homebrew/cask-fonts": {
-        "revision": "9899ab349852a15fbc634721356bec10e05d5f11"
+        "revision": "599a31c5f6a546bd3e94e71379b0c5d99a798775"
       },
       "homebrew/cask-versions": {
-        "revision": "d6d0cbd2f377f1b6b510635e24b3fbd32749c5b9"
+        "revision": "c0c3e738bc9fdd4e3c59a90fcf180bd63459830a"
       },
       "homebrew/bundle": {
         "revision": "3fbca9f51db8e7255f4b2f48daba1e04a2d99ad6"
       },
       "homebrew/cask-drivers": {
-        "revision": "750a0749e1689461bbe5d1ca2decde8330f35cf8"
+        "revision": "58ab8ec5ff9709654196ea62b4cb1cf403b4367c"
       }
     },
     "brew": {
@@ -347,7 +347,7 @@
         }
       },
       "youtube-dl": {
-        "version": "2021.3.3",
+        "version": "2021.3.14",
         "bottle": {
           "rebuild": 0,
           "cellar": ":any_skip_relocation",
@@ -355,20 +355,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.3.arm64_big_sur.bottle.tar.gz",
-              "sha256": "65f9444c23d097d383608ad528886f02d5c162bb40808445227877f225cd5e5a"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.arm64_big_sur.bottle.tar.gz",
+              "sha256": "3cbeeba083449acf0dc719a60a4b267c952d1977aa6372abee378a9d39108a71"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.3.big_sur.bottle.tar.gz",
-              "sha256": "326f2a0caa1c1abaa383c33b1b9d1c018089facd706c590f35c594b790501c99"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.big_sur.bottle.tar.gz",
+              "sha256": "1fc1cc1befa83f86f4062564275929dc0469992905a00cc373f5b11a63c9fab2"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.3.catalina.bottle.tar.gz",
-              "sha256": "872aae1eae8ac261c90307c18f62448e3ad6649577d9dfdb661789be41e28e98"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.catalina.bottle.tar.gz",
+              "sha256": "7d1f46c841d9e0c25ca7f0f756adea1138e11a09776ebe9a0986a62e8d4368bf"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.3.mojave.bottle.tar.gz",
-              "sha256": "3b7f6e505dfe070aae9f537955aa3d8e0f4473a327b9570f4b14a4f2ce39a975"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.mojave.bottle.tar.gz",
+              "sha256": "c023a2e01b617d5d0a86ca0efee08e8cda395de424ee8b61fbd5c99f4985f549"
             }
           }
         }
@@ -808,6 +808,12 @@
         "options": {
           "full_name": "qbittorrent"
         }
+      },
+      "element": {
+        "version": "1.7.22",
+        "options": {
+          "full_name": "element"
+        }
       }
     },
     "mas": {
@@ -882,9 +888,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.5-38-g636ac91",
+        "HOMEBREW_VERSION": "3.0.5-42-ge3b451c",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0a709a4f72c2e2b0b2f18d5490cd41fd0b1d4259",
+        "Homebrew/homebrew-core": "39ee99bda8fa477128a4bfb231515dea4e0d3bd0",
         "CLT": "",
         "Xcode": "12.4",
         "macOS": "11.2.3"
