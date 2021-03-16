@@ -89,6 +89,7 @@ cask 'github'
 
 ## Productivity
 cask 'alfred'
+cask "cold-turkey-blocker"
 mas 'Due - Reminders & Timers', id: 524373870
 cask 'hazeover'
 cask 'notion'
