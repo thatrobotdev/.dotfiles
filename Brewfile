@@ -113,6 +113,7 @@ mas 'Developer', id: 640199958
 mas 'Git Streaks for GitHub', id: 1525795950
 cask 'inky'
 cask 'kite'
+mas 'Tomito', id: 1526042938
 cask 'visual-studio-code'
 mas 'Xcode', id: 497799835
 
