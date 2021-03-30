@@ -50,3 +50,4 @@ Options:
 - Consolidate mackup and dotbot
 - Get working on windows
 - Automatically assemble global .gitignore_global from <https://github.com/github/gitignore>
+- Move all data away from install.sh into seperate files, and keep all data in a separate folder
