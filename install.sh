@@ -192,6 +192,7 @@ declare -a extensions=(
   "dbaeumer.vscode-eslint"
   "eg2.vscode-npm-script"
   "esbenp.prettier-vscode"
+  "fabiospampinato.vscode-projects-plus"
   "foxundermoon.shell-format"
   "GitHub.vscode-pull-request-github"
   "kiteco.kite"
