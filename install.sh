@@ -199,6 +199,7 @@ declare -a extensions=(
   "ms-python.python"
   "ms-vscode.cpptools"
   "rebornix.ruby"
+  "thisotherthing.vscode-todo-list"
   "timonwong.shellcheck"
   "vsciot-vscode.vscode-arduino"
   "wingrunr21.vscode-ruby"
