@@ -54,6 +54,7 @@ brew 'tree'
 ## Utilities
 cask 'appcleaner'
 cask 'flux'
+brew 'gifify'
 mas 'HP Smart', id: 1474276998
 cask 'macfuse' # Reccomended with Cryptomator
 brew 'mackup'

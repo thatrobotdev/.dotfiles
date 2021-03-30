@@ -5,16 +5,16 @@
         "revision": "7fc90c69bf5fd24056eb8c5beceb62b4b434cb2e"
       },
       "homebrew/cask": {
-        "revision": "9b1dfb8829459db1cb40cf087eaf4a1aa0dd8eea"
+        "revision": "4db917c337f0f2f239dae49f2cb03513c401819e"
       },
       "homebrew/cask-drivers": {
-        "revision": "6e0eb968d079adbb2369e111b99b7a8161e07f98"
+        "revision": "884f0502c636c4ecd1ef5cb7363514717f64e95f"
       },
       "homebrew/cask-fonts": {
-        "revision": "0c6440de95677eecadfe6a66517c18a7d13967ca"
+        "revision": "2a60748c920974c23c8c3fa5d4f5436588662981"
       },
       "homebrew/cask-versions": {
-        "revision": "4101f76be3e4170f02b5601b29a2ad22e79d20a0"
+        "revision": "ce5330a3ad34ac604cde914a0c898cfb1257ffc1"
       }
     },
     "cask": {
@@ -121,7 +121,7 @@
         }
       },
       "github": {
-        "version": "2.6.6-74281ffb",
+        "version": "2.7.1-333ea7bc",
         "options": {
           "full_name": "github"
         }
@@ -775,6 +775,10 @@
             }
           }
         }
+      },
+      "gifify": {
+        "version": "4.0",
+        "bottle": false
       }
     },
     "mas": {
@@ -845,9 +849,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.10-42-ge5bda4e",
+        "HOMEBREW_VERSION": "3.0.10-53-g49e5c3c",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "b40b09ee4bcecbb2c8de2df7cc7a9cc48636d2d0",
+        "Homebrew/homebrew-core": "0624486b0c8c0282603da765fe25ca554aaf3c81",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"
