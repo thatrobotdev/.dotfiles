@@ -2,6 +2,10 @@
 
 My personal dotfiles for macOS, and a packaged installation script for new OSX computers.
 
+![ezgif-7-1c929787a3a0](https://user-images.githubusercontent.com/18013689/113031428-ef66d280-914b-11eb-9ce7-e4fa1e83eb29.gif)
+
+[(mp4)](https://user-images.githubusercontent.com/18013689/113027854-ca706080-9147-11eb-9cb9-ee7017bf25db.mp4)
+
 ## What are dotfiles?
 
 Dotfiles are configuration files like `.zshrc` or `.gitconfig` that configure programs on your computer. This repository is a collection of dotfiles that I am using to make re-installing macOS take way less time congiguring and remembering my settings for programs.
