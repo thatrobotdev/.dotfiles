@@ -151,6 +151,9 @@ else
 fi
 
 if [ "${firsttime-}" ]; then
+
+  log_attention "Starting first-time configuration for some programs."
+
   # Configuring iTerm2
 
   log_install "Installing/Updating iTerm2 Color Preset"
@@ -170,6 +173,17 @@ if [ "${firsttime-}" ]; then
 
   log_install "Downloading iTerm 2 Shell Integration"
   curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+
+  # Configure Anki
+
+  # https://github.com/FooSoft/anki-connect#notes-for-mac-os-x-users
+  message "Configuring Anki to disable AppNap for Anki Connect"
+  defaults write net.ankiweb.dtop NSAppSleepDisabled -bool true
+  defaults write net.ichi2.anki NSAppSleepDisabled -bool true
+  defaults write org.qt-project.Qt.QtWebEngineCore NSAppSleepDisabled -bool true
+
+  log_attention "First-time configuration for some programs finished."
+
 fi
 
 message "Installing/Updating VS Code extensions"

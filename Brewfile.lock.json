@@ -2,24 +2,24 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "3fbca9f51db8e7255f4b2f48daba1e04a2d99ad6"
+        "revision": "7fc90c69bf5fd24056eb8c5beceb62b4b434cb2e"
       },
       "homebrew/cask": {
-        "revision": "2220b5983344fb3a7d103283dd7a94269304e1dd"
+        "revision": "9b1dfb8829459db1cb40cf087eaf4a1aa0dd8eea"
       },
       "homebrew/cask-drivers": {
-        "revision": "34f8e15e3686d4980b1b33c987b047b555aa16f4"
+        "revision": "6e0eb968d079adbb2369e111b99b7a8161e07f98"
       },
       "homebrew/cask-fonts": {
-        "revision": "8a7c54470abf94e9cecade3854404a5ba68329ca"
+        "revision": "0c6440de95677eecadfe6a66517c18a7d13967ca"
       },
       "homebrew/cask-versions": {
-        "revision": "60b045c22cfea1c4c9668493fd816b1d0848e962"
+        "revision": "4101f76be3e4170f02b5601b29a2ad22e79d20a0"
       }
     },
     "cask": {
       "firefox": {
-        "version": "86.0.1",
+        "version": "87.0",
         "options": {
           "full_name": "firefox"
         }
@@ -31,13 +31,13 @@
         }
       },
       "microsoft-edge": {
-        "version": "89.0.774.54",
+        "version": "89.0.774.63",
         "options": {
           "full_name": "microsoft-edge"
         }
       },
       "tor-browser": {
-        "version": "10.0.12",
+        "version": "10.0.15",
         "options": {
           "full_name": "tor-browser"
         }
@@ -67,7 +67,7 @@
         }
       },
       "macfuse": {
-        "version": "4.0.5",
+        "version": "4.1.0",
         "options": {
           "full_name": "macfuse"
         }
@@ -79,7 +79,7 @@
         }
       },
       "qbittorrent": {
-        "version": "4.3.3",
+        "version": "4.3.4.1",
         "options": {
           "full_name": "qbittorrent"
         }
@@ -169,7 +169,7 @@
         }
       },
       "microsoft-excel": {
-        "version": "16.47.21031401",
+        "version": "16.47.21032301",
         "options": {
           "full_name": "microsoft-excel"
         }
@@ -229,7 +229,7 @@
         }
       },
       "unity-hub": {
-        "version": "2.4.2",
+        "version": "2.4.3",
         "options": {
           "full_name": "unity-hub"
         }
@@ -247,7 +247,7 @@
         }
       },
       "cloudflare-warp": {
-        "version": "1.3.206,20210305.5",
+        "version": "1.4.27,20210323.5",
         "options": {
           "full_name": "cloudflare-warp"
         }
@@ -271,31 +271,31 @@
         }
       },
       "discord": {
-        "version": "0.0.261",
+        "version": "0.0.262",
         "options": {
           "full_name": "discord"
         }
       },
       "element": {
-        "version": "1.7.23",
+        "version": "1.7.24",
         "options": {
           "full_name": "element"
         }
       },
       "slack": {
-        "version": "4.13.0",
+        "version": "4.14.0",
         "options": {
           "full_name": "slack"
         }
       },
       "zoom": {
-        "version": "5.5.13148.0305",
+        "version": "5.6.1.560",
         "options": {
           "full_name": "zoom"
         }
       },
       "microsoft-teams": {
-        "version": "1.4.00.4971",
+        "version": "1.4.00.7175",
         "options": {
           "full_name": "microsoft-teams"
         }
@@ -307,7 +307,7 @@
         }
       },
       "sketch": {
-        "version": "70.6,109241",
+        "version": "71.1,115193",
         "options": {
           "full_name": "sketch"
         }
@@ -634,7 +634,7 @@
         }
       },
       "youtube-dl": {
-        "version": "2021.3.14",
+        "version": "2021.3.25",
         "bottle": {
           "rebuild": 0,
           "cellar": ":any_skip_relocation",
@@ -642,20 +642,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.arm64_big_sur.bottle.tar.gz",
-              "sha256": "3cbeeba083449acf0dc719a60a4b267c952d1977aa6372abee378a9d39108a71"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.25.arm64_big_sur.bottle.tar.gz",
+              "sha256": "60f2787002b67afab32ce6a9a21cbb2f6c1d3005e50d425e834bdbbfdfb80114"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.big_sur.bottle.tar.gz",
-              "sha256": "1fc1cc1befa83f86f4062564275929dc0469992905a00cc373f5b11a63c9fab2"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.25.big_sur.bottle.tar.gz",
+              "sha256": "197c090e774b444d96fbdc85b08a332954e7d4909a29b9fad0c172aaff1da490"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.catalina.bottle.tar.gz",
-              "sha256": "7d1f46c841d9e0c25ca7f0f756adea1138e11a09776ebe9a0986a62e8d4368bf"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.25.catalina.bottle.tar.gz",
+              "sha256": "781b75f7dc267184d859c75664287875b57f895e8155544a3e635857a4f950f2"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.14.mojave.bottle.tar.gz",
-              "sha256": "c023a2e01b617d5d0a86ca0efee08e8cda395de424ee8b61fbd5c99f4985f549"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.3.25.mojave.bottle.tar.gz",
+              "sha256": "90ba27f59fa561147f212ed52ed273a891ef8011f3d73bfaaa81cf9cda27ef0f"
             }
           }
         }
@@ -696,7 +696,7 @@
         }
       },
       "ffmpeg": {
-        "version": "4.3.2_1",
+        "version": "4.3.2_3",
         "bottle": {
           "rebuild": 0,
           "cellar": "/usr/local/Cellar",
@@ -704,20 +704,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_1.arm64_big_sur.bottle.tar.gz",
-              "sha256": "a4f02dfa8a56817cd7be885061073f188118c41a815657bee084b40ec5007191"
+              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_3.arm64_big_sur.bottle.tar.gz",
+              "sha256": "95e9f88efd0f33050d81317f66145e259e391c4c718bbe08ac0db53b0a3a1163"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_1.big_sur.bottle.tar.gz",
-              "sha256": "e95f2be7645766bd375f8bccd4d0099cb701ce57e68663a30d4ce5c5353dbff9"
+              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_3.big_sur.bottle.tar.gz",
+              "sha256": "ad6fe2b17d24998db46d27a6976da6aa7b6e134f3885bee82089cb57dbeaf2c2"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_1.catalina.bottle.tar.gz",
-              "sha256": "ea0820a0cc0b48c72d746198a9e9f41d8369e731ecbff9abeec772d36cbf75ab"
+              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_3.catalina.bottle.tar.gz",
+              "sha256": "60e65a454b96487f348098c066028205521402de9e5484ace2732040d9c928bb"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_1.mojave.bottle.tar.gz",
-              "sha256": "f0803e3310a22edd03a3a64e31edf4b340d7388f5af5bf5fbd9059aa335eced3"
+              "url": "https://homebrew.bintray.com/bottles/ffmpeg-4.3.2_3.mojave.bottle.tar.gz",
+              "sha256": "908108f0564c2217b34f002c28183e92edb05b286912f5959c13fe3a821b0482"
             }
           }
         }
@@ -750,7 +750,7 @@
         }
       },
       "git": {
-        "version": "2.31.0",
+        "version": "2.31.1",
         "bottle": {
           "rebuild": 0,
           "cellar": "/usr/local/Cellar",
@@ -758,20 +758,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.31.0.arm64_big_sur.bottle.tar.gz",
-              "sha256": "6d9c5ec4655d1f44ee8f415f4cab796379b18c1dbf1ec2ef03e1ff9945e0b20a"
+              "url": "https://homebrew.bintray.com/bottles/git-2.31.1.arm64_big_sur.bottle.tar.gz",
+              "sha256": "82be780c2468d4e315f861ea797e98a93084bb754d8610c06a346eea74d82150"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.31.0.big_sur.bottle.tar.gz",
-              "sha256": "074d8a4e3355018281e0ffd3eaff484d4b26bd39e0771f740eede3042872b46e"
+              "url": "https://homebrew.bintray.com/bottles/git-2.31.1.big_sur.bottle.tar.gz",
+              "sha256": "cf1fe81d5928efa530d891ec341d34c262b1eb7ea457191359476168ae323b93"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.31.0.catalina.bottle.tar.gz",
-              "sha256": "4070268c3d4b22a48a35b40c6d55c5d31bc29a41f19794189b7f4edf147dd9f2"
+              "url": "https://homebrew.bintray.com/bottles/git-2.31.1.catalina.bottle.tar.gz",
+              "sha256": "6247bd388d85b30900923c32c0cd10caf7d48d41429c8f65a780d61b493ee9a4"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/git-2.31.0.mojave.bottle.tar.gz",
-              "sha256": "a1aab277df069962a738aa5ff354043d84bdcef3472e65d9e9e59b932b06b19f"
+              "url": "https://homebrew.bintray.com/bottles/git-2.31.1.mojave.bottle.tar.gz",
+              "sha256": "ff281db6c9d895705c252ab4a7798c7274df2484c8cd5f22647e76c83ceabfca"
             }
           }
         }
@@ -780,7 +780,7 @@
     "mas": {
       "HP Smart": {
         "id": "1474276998",
-        "version": "5.7.2"
+        "version": "12.5.0"
       },
       "Microsoft Remote Desktop": {
         "id": "1295203466",
@@ -801,23 +801,23 @@
       "Due - Reminders & Timers": null,
       "Streaks": {
         "id": "1493327990",
-        "version": "6.1.3"
+        "version": "6.1.5"
       },
       "Things": {
         "id": "904280696",
-        "version": "3.13.9"
+        "version": "3.13.10"
       },
       "Keynote": {
         "id": "409183694",
-        "version": "10.3.9"
+        "version": "11.0.1"
       },
       "Numbers": {
         "id": "409203825",
-        "version": "10.3.9"
+        "version": "11.0"
       },
       "Pages": {
         "id": "409201541",
-        "version": "10.3.9"
+        "version": "11.0"
       },
       "Developer": {
         "id": "640199958",
@@ -834,20 +834,20 @@
       },
       "Day One": {
         "id": "1055511498",
-        "version": "6.0"
+        "version": "6.0.1"
       },
       "Tomito": {
         "id": "1526042938",
-        "version": "1.5"
+        "version": "1.5.2"
       }
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.7-33-g05f1c37",
+        "HOMEBREW_VERSION": "3.0.10-42-ge5bda4e",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "d44a2e2271b2527c2e23729aed11c5cc5f199ade",
+        "Homebrew/homebrew-core": "b40b09ee4bcecbb2c8de2df7cc7a9cc48636d2d0",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"
