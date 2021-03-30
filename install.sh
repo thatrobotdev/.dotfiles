@@ -7,24 +7,6 @@ readonly RED='\033[0;31m'
 readonly CYAN='\033[0;36m'
 readonly NC='\033[0m' # No Color / Color Reset
 
-display_help() {
-  echo "Example usage:"
-  echo "  ./install [command-line arguments]"
-  echo
-  echo "Installs or updates configuration dotfiles for macOS."
-  echo "All logging from this script will be preceeded by a \"⚙\" character"
-  echo -e "If the script needs to get your attention, messages will be in ${CYAN}CYAN${NC}"
-  echo "(if your terminal supports it, you'll hear a sound)."
-  echo -e "Errors are ${RED}RED${NC}, and a new install is usually ${GREEN}GREEN${NC}."
-  echo
-  echo "Options:"
-  echo "  -h, --help          displays description and options"
-  echo "  -n, --no-homebrew   skips Homebrew config when passed"
-  echo "  -f --first-time     configured apps and runs scripts for"
-  echo "                      first-time set-up, run when running"
-  echo "                      the install script for the first time."
-}
-
 abort() {
   printf "${RED}⚙ Error: %s\n${NC}" "$@"
   exit 1
@@ -36,6 +18,10 @@ chomp() { # Remove newline characters from the end of any string
 
 message() {
   printf "⚙ %s\n" "$(chomp "$1")"
+}
+
+log_unstyled() {
+  printf "%s\n" "$(chomp "$1")"
 }
 
 log_install() {
@@ -51,6 +37,24 @@ ring_bell() {         # Use the shell's audible bell
   if [[ -t 1 ]]; then # If attached to a terminal
     printf "\a"
   fi
+}
+
+display_help() {
+  log_unstyled "Example usage:"
+  log_unstyled "  ./install [command-line arguments]"
+  log_unstyled
+  log_unstyled "Installs or updates configuration dotfiles for macOS."
+  log_unstyled "All logging from this script will be preceeded by a \"⚙\" character"
+  log_unstyled -e "If the script needs to get your attention, messages will be in ${CYAN}CYAN${NC}"
+  log_unstyled "(if your terminal supports it, you'll hear a sound)."
+  log_unstyled -e "Errors are ${RED}RED${NC}, and a new install is usually ${GREEN}GREEN${NC}."
+  log_unstyled
+  log_unstyled "Options:"
+  log_unstyled "  -h, --help          displays description and options"
+  log_unstyled "  -n, --no-homebrew   skips Homebrew config when passed"
+  log_unstyled "  -f --first-time     configured apps and runs scripts for"
+  log_unstyled "                      first-time set-up, run when running"
+  log_unstyled "                      the install script for the first time."
 }
 
 # Abort if Bash isn't installed
@@ -122,7 +126,7 @@ else
     xcode-select --install
     log_attention "Press any key to continue when you are done with installation."
     read -n 1 -s -r -p ""
-    echo
+    log_unstyled
   fi
 
   # Install all our dependencies with bundle (See Brewfile)
@@ -149,7 +153,7 @@ fi
 if [ "${firsttime-}" ]; then
   # Configuring iTerm2
 
-  echo "Installing/Updating iTerm2 Color Preset"
+  log_install "Installing/Updating iTerm2 Color Preset"
 
   readonly ITERM2_MATERIAL_DESIGN_DIR='iterm2-material-design' # No Color
 
@@ -160,11 +164,11 @@ if [ "${firsttime-}" ]; then
   open iterm2-material-design/material-design-colors.itermcolors
 
   log_attention "To finish set-up for the color preset, follow these instructions:"
-  echo "1. Go to iTerm2 > Preferences > Profiles > Colors"
-  echo "2. Click Color Presets..."
-  echo "3. Select the material-design-colors from Load Presets"
+  message "1. Go to iTerm2 > Preferences > Profiles > Colors"
+  message "2. Click Color Presets..."
+  message "3. Select the material-design-colors from Load Presets"
 
-  echo "Downloading iTerm 2 Shell Integration"
+  log_install "Downloading iTerm 2 Shell Integration"
   curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 fi
 
