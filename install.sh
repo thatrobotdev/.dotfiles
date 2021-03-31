@@ -96,9 +96,9 @@ done
 
 message "Setting up your Mac... (get help with \"-h\" or \"--help\")"
 
-# Homebrew config if user doesn't pass a -nh or --no-homebrew argument
+# Start Homebrew config if user doesn't pass a -nh or --no-homebrew argument
 if [ "${nohomebrew-}" ]; then
-  message "Skipping Homebrew recipe update."
+  log_attention "Skipping Homebrew config."
 else
 
   message "Starting Homebrew config..."
@@ -111,10 +111,10 @@ else
     message "Homebrew found."
   fi
 
-  message "Updating Homebrew..."
+  log_install "Updating Homebrew..."
   brew update
 
-  message "Upgrading outdated casks and outdated, unpinned formulae..."
+  log_install "Upgrading outdated casks and outdated, unpinned formulae..."
   brew upgrade
 
   # Check if Apple Command Line tools are installed, and prompt installation if not.
@@ -130,11 +130,11 @@ else
   fi
 
   # Install all our dependencies with bundle (See Brewfile)
-  message "Installing all our dependencies with bundle..."
+  log_install "Installing Applications and Dependencies..."
   brew tap homebrew/bundle
   brew bundle
 
-  log_attention "Allow system Java wrappers to find JDKs (password may be required)"
+  log_attention "Allowing system Java wrappers to find JDKs (password may be required).."
   sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
   sudo ln -sfn /usr/local/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
 
@@ -152,7 +152,7 @@ fi
 
 if [ "${firsttime-}" ]; then
 
-  log_attention "Starting first-time configuration for some programs."
+  log_attention "Starting first-time configuration for some programs..."
 
   # Configuring iTerm2
 
@@ -177,16 +177,16 @@ if [ "${firsttime-}" ]; then
   # Configure Anki
 
   # https://github.com/FooSoft/anki-connect#notes-for-mac-os-x-users
-  message "Configuring Anki to disable AppNap for Anki Connect"
+  log_install "Configuring Anki to disable AppNap for Anki Connect..."
   defaults write net.ankiweb.dtop NSAppSleepDisabled -bool true
   defaults write net.ichi2.anki NSAppSleepDisabled -bool true
   defaults write org.qt-project.Qt.QtWebEngineCore NSAppSleepDisabled -bool true
 
-  log_attention "First-time configuration for some programs finished."
+  message "First-time configuration for some programs finished."
 
 fi
 
-message "Installing/Updating VS Code extensions"
+log_install "Installing/Updating VS Code extensions"
 declare -a extensions=(
   "DavidAnson.vscode-markdownlint"
   "dbaeumer.vscode-eslint"
@@ -234,11 +234,10 @@ set +e -u
 ########################################################
 
 # Restoring macOS configs with mackup
-message "Restoring macOS configs with mackup..."
+log_install "Restoring macOS configs with mackup..."
 mackup restore
 
-message "Backing up current configuration..."
+log_install "Backing up current configuration..."
 mackup backup
 
-message "Ayy we good"
-ring_bell
+log_attention "Ayy we good"
