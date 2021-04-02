@@ -35,7 +35,11 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 
+## Docker
+cask 'docker'
+
 ## Browsers
+cask 'chromium'
 cask 'firefox'
 cask 'google-chrome'
 cask 'microsoft-edge'
@@ -47,9 +51,11 @@ cask 'authy'
 
 ## Core Utilities
 brew 'coreutils'
+brew 'curl'
 brew 'gcc'
 brew 'pkg-config'
 brew 'tree'
+brew 'wget'
 
 ## Utilities
 cask 'appcleaner'
@@ -114,6 +120,7 @@ mas 'Developer', id: 640199958
 mas 'Git Streaks for GitHub', id: 1525795950
 cask 'inky'
 cask 'kite'
+brew 'python3'
 mas 'Tomito', id: 1526042938
 cask 'visual-studio-code'
 mas 'Xcode', id: 497799835
@@ -172,6 +179,3 @@ mas 'Day One', id: 1055511498
 
 ## Drivers
 cask 'silicon-labs-vcp-driver'
-
-## Programs I wish I could auto-install
-# Roblox: https://github.com/Homebrew/homebrew-cask/pull/81347, https://github.com/Homebrew/homebrew-cask/issues/24377
