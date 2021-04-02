@@ -5,16 +5,16 @@
         "revision": "c4cf96857c050dfa4f65f52109862dc68e55f60a"
       },
       "homebrew/cask": {
-        "revision": "5d0771915399569de50f082254bb2d3d1926f058"
+        "revision": "ec36b30e5d292daf71f9c23983433ce87bdafb6a"
       },
       "homebrew/cask-drivers": {
-        "revision": "01f2b417540439f6fe412ad7ce23dbbcbbb0d90c"
+        "revision": "dae685ca2f709ffd4f7f98d92d386fb8a31b50b5"
       },
       "homebrew/cask-fonts": {
         "revision": "504d4b93aa6eaf4fce1bf17c19f55828ad7229a4"
       },
       "homebrew/cask-versions": {
-        "revision": "e60be508fd23ec312bfae8b099ff679d8a5027a0"
+        "revision": "5f99e9c636abdd94db56b36ec5d78ff3a0144176"
       }
     },
     "cask": {
@@ -648,26 +648,26 @@
       "youtube-dl": {
         "version": "2021.4.1",
         "bottle": {
-          "rebuild": 0,
+          "rebuild": 1,
           "cellar": ":any_skip_relocation",
           "prefix": "/usr/local",
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.arm64_big_sur.bottle.tar.gz",
-              "sha256": "1939620cae73729dffa8aa6151803351b72570c82cb5603c73f822f0344d8e22"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.arm64_big_sur.bottle.1.tar.gz",
+              "sha256": "a6f0f586f8037d94cfabef7bd0a1cb6c065843fdf4536949282e62cc4b450628"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.big_sur.bottle.tar.gz",
-              "sha256": "332a971bcdd3abffcebb9b1ab6ca1b77eb076fbc0ade3bb6610a8487b96c166b"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.big_sur.bottle.1.tar.gz",
+              "sha256": "cee95665d851e0c65b2d4d4800aeb4f2853f84b55ce104be92ece6269ece9c60"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.catalina.bottle.tar.gz",
-              "sha256": "305bc5a36933a5916791afaac513c2e4ef103216c927a2f3a09a156a8702bbb8"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.catalina.bottle.1.tar.gz",
+              "sha256": "56c0bce967feb4e82ab4a46256b9eb9ca0e5668bcaa48722299b0731c204144b"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.mojave.bottle.tar.gz",
-              "sha256": "d3d5eba75aa1205fcb7948036b1d56996a1f538a032324a5abce42ad4390d595"
+              "url": "https://homebrew.bintray.com/bottles/youtube-dl-2021.4.1.mojave.bottle.1.tar.gz",
+              "sha256": "b92bff029f9e87f23da0b9be57e97582afb041977152023c01b08560334e0233"
             }
           }
         }
@@ -735,7 +735,7 @@
         }
       },
       "gh": {
-        "version": "1.8.0",
+        "version": "1.8.1",
         "bottle": {
           "rebuild": 0,
           "cellar": ":any_skip_relocation",
@@ -743,20 +743,20 @@
           "root_url": "https://homebrew.bintray.com/bottles",
           "files": {
             "arm64_big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/gh-1.8.0.arm64_big_sur.bottle.tar.gz",
-              "sha256": "70f3efb480ed39dbcbb135dc50357d683409ffa0136b711da3725c0ea365a619"
+              "url": "https://homebrew.bintray.com/bottles/gh-1.8.1.arm64_big_sur.bottle.tar.gz",
+              "sha256": "833799451ffeea357fa3d82b70effcc168f712e5867beb5e028f819b84ac4e6b"
             },
             "big_sur": {
-              "url": "https://homebrew.bintray.com/bottles/gh-1.8.0.big_sur.bottle.tar.gz",
-              "sha256": "e2c1698ed62087998541b45b4758f0bb6c025be2ccef3d7b5df008aa29ea5587"
+              "url": "https://homebrew.bintray.com/bottles/gh-1.8.1.big_sur.bottle.tar.gz",
+              "sha256": "62168fa8a8aee283a4001f9db6f1cd865f61249f41a438e8f98fcce0244b780c"
             },
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/gh-1.8.0.catalina.bottle.tar.gz",
-              "sha256": "7744996aa942cde9f3585a1ea322cacde82f123cd8d484d14948665c55845d07"
+              "url": "https://homebrew.bintray.com/bottles/gh-1.8.1.catalina.bottle.tar.gz",
+              "sha256": "a926b6cd06e223cec70c4505c521dbddcd687b3bb1f83563b9ceea25b18fe8a8"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/gh-1.8.0.mojave.bottle.tar.gz",
-              "sha256": "8fcab6998821e19696c0c27670b7a1873c9bd6a2220a8668f25df05e112feb50"
+              "url": "https://homebrew.bintray.com/bottles/gh-1.8.1.mojave.bottle.tar.gz",
+              "sha256": "bf7f43ddfb4c7b73888e0ec7747acf78569567746de7a3b1d1bb03f4adfa32f5"
             }
           }
         }
@@ -904,7 +904,7 @@
     "mas": {
       "HP Smart": {
         "id": "1474276998",
-        "version": "12.5.0"
+        "version": "12.6.0"
       },
       "Microsoft Remote Desktop": {
         "id": "1295203466",
@@ -972,9 +972,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.10-80-g9fb771d",
+        "HOMEBREW_VERSION": "3.0.10-187-gbcb3fc1",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "ec27d08f562d726c1aa678bd87b8c95efbb415ed",
+        "Homebrew/homebrew-core": "a8833b7eb52e37e1c98dd05fecb70d0822eaa852",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"

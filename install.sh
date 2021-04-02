@@ -187,27 +187,7 @@ if [ "${firsttime-}" ]; then
 fi
 
 log_install "Installing/Updating VS Code extensions"
-declare -a extensions=(
-  "DavidAnson.vscode-markdownlint"
-  "dbaeumer.vscode-eslint"
-  "eg2.vscode-npm-script"
-  "esbenp.prettier-vscode"
-  "fabiospampinato.vscode-projects-plus"
-  "foxundermoon.shell-format"
-  "GitHub.vscode-pull-request-github"
-  "kiteco.kite"
-  "ms-python.python"
-  "ms-vscode.cpptools"
-  "rebornix.ruby"
-  "thisotherthing.vscode-todo-list"
-  "timonwong.shellcheck"
-  "vsciot-vscode.vscode-arduino"
-  "wingrunr21.vscode-ruby"
-)
-
-for extension in "${extensions[@]}"; do
-  code --install-extension "${extension}" --force
-done
+./install/vscode-extensions.sh
 
 # Dotbot
 message "Booting up Dotbot..."
