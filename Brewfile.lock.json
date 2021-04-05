@@ -5,16 +5,16 @@
         "revision": "c4cf96857c050dfa4f65f52109862dc68e55f60a"
       },
       "homebrew/cask": {
-        "revision": "ec36b30e5d292daf71f9c23983433ce87bdafb6a"
+        "revision": "6a7cf8b91b9366ac8da4925219d1f10c3a1a8b11"
       },
       "homebrew/cask-drivers": {
-        "revision": "dae685ca2f709ffd4f7f98d92d386fb8a31b50b5"
+        "revision": "6ff13284bcb968fefd0f3ce48f8050e200c8c93e"
       },
       "homebrew/cask-fonts": {
-        "revision": "504d4b93aa6eaf4fce1bf17c19f55828ad7229a4"
+        "revision": "1d5b5e5e3a45e4c5c038dc660b202fb6239bffd2"
       },
       "homebrew/cask-versions": {
-        "revision": "5f99e9c636abdd94db56b36ec5d78ff3a0144176"
+        "revision": "385f2c378650a5b4302a28dcfb849b4a6e182d34"
       }
     },
     "cask": {
@@ -31,7 +31,7 @@
         }
       },
       "microsoft-edge": {
-        "version": "89.0.774.63",
+        "version": "89.0.774.68",
         "options": {
           "full_name": "microsoft-edge"
         }
@@ -235,7 +235,7 @@
         }
       },
       "anki": {
-        "version": "2.1.42",
+        "version": "2.1.43",
         "options": {
           "full_name": "anki"
         }
@@ -391,7 +391,7 @@
         }
       },
       "chromium": {
-        "version": "867424",
+        "version": "869129",
         "options": {
           "full_name": "chromium"
         }
@@ -899,6 +899,33 @@
             }
           }
         }
+      },
+      "pipx": {
+        "version": "0.16.1.0",
+        "bottle": {
+          "rebuild": 0,
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "root_url": "https://homebrew.bintray.com/bottles",
+          "files": {
+            "arm64_big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/pipx-0.16.1.0.arm64_big_sur.bottle.tar.gz",
+              "sha256": "bab02779c5da9216dbc21812e5786dce16e6c0f79457575fd78037ed96bd6cd0"
+            },
+            "big_sur": {
+              "url": "https://homebrew.bintray.com/bottles/pipx-0.16.1.0.big_sur.bottle.tar.gz",
+              "sha256": "9c07a40553cfa635460d685e72ec0fc29192a0c50167d6c5ee8a441db3065453"
+            },
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/pipx-0.16.1.0.catalina.bottle.tar.gz",
+              "sha256": "abc0c5222a5ddafa0230be3df0e96251b10731ac139a776b367486fccf817ace"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/pipx-0.16.1.0.mojave.bottle.tar.gz",
+              "sha256": "85019ec96f1cf0aa890a9424522755a3beb3a69d6ef508293cf9292895acd1b9"
+            }
+          }
+        }
       }
     },
     "mas": {
@@ -912,7 +939,7 @@
       },
       "Plash": {
         "id": "1494023538",
-        "version": "2.0.0"
+        "version": "2.0.1"
       },
       "GIPHY CAPTURE": {
         "id": "668208984",
@@ -972,9 +999,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.10-187-gbcb3fc1",
+        "HOMEBREW_VERSION": "3.0.11-11-g6e7857c",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "a8833b7eb52e37e1c98dd05fecb70d0822eaa852",
+        "Homebrew/homebrew-core": "db37da0085c7d0c42c6188fb7d973314fc65e546",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"

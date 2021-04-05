@@ -41,3 +41,6 @@ antigen apply
 
 # Add iTerm 2 Shell Integration
 source ~/.iterm2_shell_integration.zsh
+
+# Created by `pipx` on 2021-04-05 20:21:55
+export PATH="$PATH:/Users/jameskerrane/.local/bin"
