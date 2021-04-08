@@ -137,6 +137,7 @@ cask 'anki'
 
 ## Art
 cask 'clip-studio-paint'
+cask 'yacreader'
 
 ## VPN
 cask 'cloudflare-warp'

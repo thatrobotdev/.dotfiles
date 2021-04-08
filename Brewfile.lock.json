@@ -5,7 +5,7 @@
         "revision": "c4cf96857c050dfa4f65f52109862dc68e55f60a"
       },
       "homebrew/cask": {
-        "revision": "6a7cf8b91b9366ac8da4925219d1f10c3a1a8b11"
+        "revision": "dadb33514ff711984be1d0b2ac56e825d4a14a5c"
       },
       "homebrew/cask-drivers": {
         "revision": "6ff13284bcb968fefd0f3ce48f8050e200c8c93e"
@@ -394,6 +394,12 @@
         "version": "869129",
         "options": {
           "full_name": "chromium"
+        }
+      },
+      "yacreader": {
+        "version": "9.7.1.2009123",
+        "options": {
+          "full_name": "yacreader"
         }
       }
     },
@@ -999,9 +1005,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.11-11-g6e7857c",
+        "HOMEBREW_VERSION": "3.0.11-21-gd4d24ed",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "db37da0085c7d0c42c6188fb7d973314fc65e546",
+        "Homebrew/homebrew-core": "954233ba94e2b0f204bf4423ff4bc9e78cca0ed8",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"
