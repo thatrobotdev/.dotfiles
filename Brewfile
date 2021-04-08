@@ -151,8 +151,9 @@ cask 'cryptomator'
 cask 'discord'
 cask 'element'
 cask 'slack'
-cask 'zoom'
 cask 'microsoft-teams'
+cask 'webex'
+cask 'zoom'
 
 ## Design
 cask 'figma'
