@@ -5,16 +5,16 @@
         "revision": "0df097ca87d3bcf762d0f8cbe30eed8c37c35786"
       },
       "homebrew/cask": {
-        "revision": "23ba12b0aad1187c72b2332b8393613f540718f6"
+        "revision": "646829a2e5cdff2e8d80cc5a4b35603af8a596cb"
       },
       "homebrew/cask-drivers": {
         "revision": "d5ed46a0fa79261c3bf34387deec5902dc4f8e44"
       },
       "homebrew/cask-fonts": {
-        "revision": "7e14df701ef677f5af5cb21bd59ba8aadfebbad9"
+        "revision": "8390d0112d3be11703a8ac0d8d258a98dc8dbb4b"
       },
       "homebrew/cask-versions": {
-        "revision": "1dbbc1a6447000f52080d6ade39f5882ccc113c6"
+        "revision": "f3c70c1fd0cf790128c25615673f2b057b24ee83"
       }
     },
     "cask": {
@@ -205,7 +205,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.55.0",
+        "version": "1.55.1",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -385,7 +385,7 @@
         }
       },
       "docker": {
-        "version": "3.2.2,61853",
+        "version": "3.3.0,62916",
         "options": {
           "full_name": "docker"
         }
@@ -406,6 +406,18 @@
         "version": "41.3.0.18191",
         "options": {
           "full_name": "webex"
+        }
+      },
+      "pictogram": {
+        "version": "0.1,13",
+        "options": {
+          "full_name": "pictogram"
+        }
+      },
+      "microsoft-remote-desktop": {
+        "version": "10.5.2",
+        "options": {
+          "full_name": "microsoft-remote-desktop"
         }
       }
     },
@@ -1011,9 +1023,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.11-97-gf2e3967",
+        "HOMEBREW_VERSION": "3.0.11-104-g77a360b",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "382930703e1358ab9da59b936d4fe217f26b741f",
+        "Homebrew/homebrew-core": "efa89684e992ed605e9faa975677174c42be70a8",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"

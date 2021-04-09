@@ -65,11 +65,12 @@ mas 'HP Smart', id: 1474276998
 cask 'macfuse' # Reccomended with Cryptomator
 brew 'mackup'
 brew 'mas'
-mas 'Microsoft Remote Desktop', id: 1295203466
+cask 'microsoft-remote-desktop'
 cask 'netdownloadhelpercoapp' # Video DownloadHelper Companion App
 brew 'node'
 brew 'openjdk'
 brew 'openjdk@8'
+cask 'pictogram'
 mas 'Plash', id: 1494023538
 cask 'qbittorrent'
 cask 'rocket'
