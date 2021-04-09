@@ -7,6 +7,7 @@ IFS=$'\n\t'
 declare -a extensions=(
     "vsciot-vscode.vscode-arduino"
     "ms-vscode.cpptools"
+    "ms-vscode-remote.remote-containers"
     "dbaeumer.vscode-eslint"
     "github.vscode-pull-request-github"
     "ms-toolsai.jupyter"
