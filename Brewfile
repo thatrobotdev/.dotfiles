@@ -34,6 +34,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
+tap 'nrlquaker/createzap'
 
 ## Docker
 cask 'docker'
@@ -59,6 +60,7 @@ brew 'wget'
 
 ## Utilities
 cask 'appcleaner'
+cask 'battery-buddy'
 cask 'flux'
 brew 'gifify'
 mas 'HP Smart', id: 1474276998
