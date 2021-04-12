@@ -139,7 +139,6 @@ cask 'unity-hub'
 cask 'anki'
 
 ## Art
-cask 'adobe-digital-editions'
 cask 'clip-studio-paint'
 cask 'yacreader'
 
