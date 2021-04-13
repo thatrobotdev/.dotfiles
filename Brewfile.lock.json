@@ -5,16 +5,16 @@
         "revision": "0df097ca87d3bcf762d0f8cbe30eed8c37c35786"
       },
       "homebrew/cask": {
-        "revision": "013ebbcf118207d92e65aefca8bc84b63da0b351"
+        "revision": "4f31945925dea22774b8c69fdd0ed098f02c61e9"
       },
       "homebrew/cask-drivers": {
-        "revision": "d6f47a9550b55bc3865930877116de09defb41e4"
+        "revision": "f142b55db16a48f1668a3541baa4cc349acd41e2"
       },
       "homebrew/cask-fonts": {
-        "revision": "a0ee021ec62a5bcd78d2ec3c16d90ecf2a0c213b"
+        "revision": "18934178b335c24ae06c02a55b062efa2b47a1a7"
       },
       "homebrew/cask-versions": {
-        "revision": "aab93e2b288343b12a34960c6ca5f37cbe31dc7b"
+        "revision": "3047f4c4537db3ad0e6d210bcfd18fc599866fce"
       },
       "nrlquaker/createzap": {
         "revision": "e5e80a3ea39d911efcf3744908ba034144c80e9c"
@@ -136,7 +136,7 @@
         }
       },
       "cold-turkey-blocker": {
-        "version": "4.2,0",
+        "version": "4.2.1",
         "options": {
           "full_name": "cold-turkey-blocker"
         }
@@ -208,7 +208,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.55.1",
+        "version": "1.55.2",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -286,7 +286,7 @@
         }
       },
       "slack": {
-        "version": "4.14.0",
+        "version": "4.15.0",
         "options": {
           "full_name": "slack"
         }
@@ -394,7 +394,7 @@
         }
       },
       "chromium": {
-        "version": "871199",
+        "version": "871732",
         "options": {
           "full_name": "chromium"
         }
@@ -765,30 +765,30 @@
         }
       },
       "ffmpeg": {
-        "version": "4.3.2_4",
+        "version": "4.4",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_big_sur": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:549f899dadc339af7069355aa3a34591f536843efc431b2541693bc806ca5048",
-              "sha256": "549f899dadc339af7069355aa3a34591f536843efc431b2541693bc806ca5048"
+              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:e335852b99ebccad912bbfa8837f288b3c896b33676c4f076aef7f5eb2923860",
+              "sha256": "e335852b99ebccad912bbfa8837f288b3c896b33676c4f076aef7f5eb2923860"
             },
             "big_sur": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:5275547e1b3dba43749ce3d91ddd92120ccc6d5f98090dd01dba2a2e615d8166",
-              "sha256": "5275547e1b3dba43749ce3d91ddd92120ccc6d5f98090dd01dba2a2e615d8166"
+              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:83e43e94ed5475d49fb8c65fba89e073586218811ffe5c0b54b141e03af06f2a",
+              "sha256": "83e43e94ed5475d49fb8c65fba89e073586218811ffe5c0b54b141e03af06f2a"
             },
             "catalina": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:5584b6d04f9d24a3bae17c6ebd640a7023e063b5c879b9a1cfb584dc51e6a527",
-              "sha256": "5584b6d04f9d24a3bae17c6ebd640a7023e063b5c879b9a1cfb584dc51e6a527"
+              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:82ce4be0cbb00c8ba99b79855e97d6c6bf90089cb7aa016cdac54abae26bf083",
+              "sha256": "82ce4be0cbb00c8ba99b79855e97d6c6bf90089cb7aa016cdac54abae26bf083"
             },
             "mojave": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:39af46559faf9aeb3aefa10c60aefd1563815518fdab86a1fa44ec11e886da1a",
-              "sha256": "39af46559faf9aeb3aefa10c60aefd1563815518fdab86a1fa44ec11e886da1a"
+              "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/blobs/sha256:e3fd3f329bedbea63529e74eba7a14b12dfd74fdb242471d8946f91d591b26ac",
+              "sha256": "e3fd3f329bedbea63529e74eba7a14b12dfd74fdb242471d8946f91d591b26ac"
             }
           }
         }
@@ -1061,6 +1061,10 @@
       "Tomito": {
         "id": "1526042938",
         "version": "1.5.2"
+      },
+      "Amphetamine": {
+        "id": "937984704",
+        "version": "5.2.1"
       }
     },
     "whalebrew": {
@@ -1070,9 +1074,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.11-152-g6359af5",
+        "HOMEBREW_VERSION": "3.1.1-22-g586d25a",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "f7316068d9ad4f83f79992beee84c294ea39e9c7",
+        "Homebrew/homebrew-core": "88d65157634747a4160ac6ee4dbf932809c4ea7e",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"

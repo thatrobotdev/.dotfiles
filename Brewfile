@@ -36,6 +36,8 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'nrlquaker/createzap'
 
+brew 'mas'
+
 ## Docker
 cask 'docker'
 
@@ -59,6 +61,7 @@ brew 'tree'
 brew 'wget'
 
 ## Utilities
+mas 'Amphetamine', id: 937984704
 cask 'appcleaner'
 cask 'battery-buddy'
 cask 'flux'
@@ -66,7 +69,6 @@ brew 'gifify'
 mas 'HP Smart', id: 1474276998
 cask 'macfuse' # Reccomended with Cryptomator
 brew 'mackup'
-brew 'mas'
 cask 'microsoft-remote-desktop'
 cask 'netdownloadhelpercoapp' # Video DownloadHelper Companion App
 brew 'node'
