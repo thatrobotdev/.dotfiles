@@ -150,7 +150,6 @@ cask 'yacreader'
 cask 'cloudflare-warp'
 
 ## Cloud Storage
-cask 'google-backup-and-sync'
 cask 'google-drive'
 cask 'cryptomator'
 

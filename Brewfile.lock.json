@@ -5,16 +5,16 @@
         "revision": "0df097ca87d3bcf762d0f8cbe30eed8c37c35786"
       },
       "homebrew/cask": {
-        "revision": "f8a449c628a56300adc0142d10ee4b97369c60cf"
+        "revision": "05dd24829f913bcaa6832680d4556a37ef5b60d4"
       },
       "homebrew/cask-drivers": {
-        "revision": "d06d15283fcbcd58a893181e86315eff0ed7430c"
+        "revision": "44e33d8de9a085d3c98e3b1c863a202999f68d13"
       },
       "homebrew/cask-fonts": {
         "revision": "d3d0c80bd76a6fb8c3d37638174584dfe9248b08"
       },
       "homebrew/cask-versions": {
-        "revision": "abe42d37cd4aa85d1185d026c90e78870cc84a3b"
+        "revision": "e32d84d849248cd6aa1a73f2e6884fcead9b64c0"
       },
       "nrlquaker/createzap": {
         "revision": "e5e80a3ea39d911efcf3744908ba034144c80e9c"
@@ -304,7 +304,7 @@
         }
       },
       "figma": {
-        "version": "96.4.0",
+        "version": "97.7.0",
         "options": {
           "full_name": "figma"
         }
@@ -433,6 +433,12 @@
         "version": "3.0",
         "options": {
           "full_name": "openaudible"
+        }
+      },
+      "adobe-digital-editions": {
+        "version": "4.5.11",
+        "options": {
+          "full_name": "adobe-digital-editions"
         }
       }
     },
@@ -1080,9 +1086,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.1.2-28-g270a7c1",
+        "HOMEBREW_VERSION": "3.1.2-32-g5c35243",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "787dd673bf726d0ce594935b33b309195e4bef2f",
+        "Homebrew/homebrew-core": "cfad94c9fc99b7240fb519874c7025979e5b0c59",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"
