@@ -91,6 +91,7 @@ brew 'ffmpeg'
 mas 'GIPHY CAPTURE', id: 668208984
 mas 'iMovie', id: 408981434
 cask 'obs'
+cask 'openaudible'
 cask 'twitch'
 cask 'vlc'
 
