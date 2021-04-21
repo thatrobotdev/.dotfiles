@@ -58,6 +58,7 @@ brew 'curl'
 brew 'gcc'
 brew 'pkg-config'
 brew 'tree'
+brew 'webp'
 brew 'wget'
 
 ## Utilities
