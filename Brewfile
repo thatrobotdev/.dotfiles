@@ -42,7 +42,6 @@ brew 'mas'
 cask 'docker'
 
 ## Browsers
-cask 'chromium'
 cask 'firefox'
 cask 'google-chrome'
 cask 'microsoft-edge'
