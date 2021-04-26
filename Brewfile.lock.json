@@ -14,7 +14,7 @@
         "revision": "84535dd6d8ce8bedd2922c8688e608bb4c9d7b5c"
       },
       "homebrew/cask-versions": {
-        "revision": "5206a1d4de507d23268af308847df34624967c3a"
+        "revision": "73a4a60e6bfb0392cb6d05b1f79da1f9c5b4803a"
       },
       "nrlquaker/createzap": {
         "revision": "e5e80a3ea39d911efcf3744908ba034144c80e9c"
@@ -23,7 +23,7 @@
         "revision": "3c26d682dfe8e2cc7dd763d73260c3521994fb77"
       },
       "homebrew/core": {
-        "revision": "f1742bccb0b0d8e8e98dfcbc936c6d815d204963"
+        "revision": "61548debfe2c4dabd0dacae57caeb16110c0eb76"
       },
       "thatrobotdev/custom": {
         "revision": "612150fbd190c6a8a30c0934c52ebfa0054bc0c7"
@@ -460,6 +460,12 @@
         "version": "3.5.2",
         "options": {
           "full_name": "shukofukurou"
+        }
+      },
+      "handbrake": {
+        "version": "1.3.3",
+        "options": {
+          "full_name": "handbrake"
         }
       }
     },
@@ -1198,15 +1204,15 @@
       }
     },
     "whalebrew": {
-      "archivebox/archivebox": "1781aa4044aed64f4c3d1740c3561373b41b550e029322bb5ec3d57910f3057b"
+      "archivebox/archivebox": "b705ecc9776df40c8ade0c763a3027bba0f5cd9a0f5852c49048a1db26bdfc66"
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.1.3-105-gc5bcfe8",
+        "HOMEBREW_VERSION": "3.1.3-107-g1157a97",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "f1742bccb0b0d8e8e98dfcbc936c6d815d204963",
+        "Homebrew/homebrew-core": "61548debfe2c4dabd0dacae57caeb16110c0eb76",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"
