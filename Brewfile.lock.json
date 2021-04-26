@@ -2,19 +2,19 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "9ee0d9912401eca4f21310bd19876a8cbac63f6d"
+        "revision": "ff52a209bfade1a663848684d354a6b623aaa4ca"
       },
       "homebrew/cask": {
-        "revision": "107de1bbdef51c64e6c0b2b4bd56c61569f0f10a"
+        "revision": "dc6c399a37eb01bfb0454d549fa18ed6d302bca7"
       },
       "homebrew/cask-drivers": {
-        "revision": "61e62399925aae89c38785276bbae3b2d0916064"
+        "revision": "3d6cee3049452800873975fb31b89176503172e0"
       },
       "homebrew/cask-fonts": {
-        "revision": "189d0f4a2c5e3732d35eb33ca9f9a32ab9e6286a"
+        "revision": "84535dd6d8ce8bedd2922c8688e608bb4c9d7b5c"
       },
       "homebrew/cask-versions": {
-        "revision": "a7e9cff3d93e02aa37283d939b906cfdb6127121"
+        "revision": "5206a1d4de507d23268af308847df34624967c3a"
       },
       "nrlquaker/createzap": {
         "revision": "e5e80a3ea39d911efcf3744908ba034144c80e9c"
@@ -23,10 +23,10 @@
         "revision": "3c26d682dfe8e2cc7dd763d73260c3521994fb77"
       },
       "homebrew/core": {
-        "revision": "fe0581a66cf2c2ad1b75defa8a15a8bb92a66845"
+        "revision": "f1742bccb0b0d8e8e98dfcbc936c6d815d204963"
       },
       "thatrobotdev/custom": {
-        "revision": "6d279948926dfd8cd9b9ae137aa7a43e75a36e2b"
+        "revision": "612150fbd190c6a8a30c0934c52ebfa0054bc0c7"
       }
     },
     "cask": {
@@ -109,7 +109,7 @@
         }
       },
       "iterm2": {
-        "version": "3.4.5",
+        "version": "3.4.6",
         "options": {
           "full_name": "iterm2"
         }
@@ -301,7 +301,7 @@
         }
       },
       "zoom": {
-        "version": "5.6.3.706",
+        "version": "5.6.4.765",
         "options": {
           "full_name": "zoom"
         }
@@ -454,6 +454,12 @@
         "version": "3.3.3",
         "options": {
           "full_name": "hachidori"
+        }
+      },
+      "shukofukurou": {
+        "version": "3.5.2",
+        "options": {
+          "full_name": "shukofukurou"
         }
       }
     },
@@ -1198,9 +1204,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.1.3-91-gfb7d19c",
+        "HOMEBREW_VERSION": "3.1.3-105-gc5bcfe8",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "fe0581a66cf2c2ad1b75defa8a15a8bb92a66845",
+        "Homebrew/homebrew-core": "f1742bccb0b0d8e8e98dfcbc936c6d815d204963",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.3"
