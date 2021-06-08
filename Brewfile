@@ -26,7 +26,6 @@ brew "openjdk"
 brew "pipx"
 brew "tree"
 brew "wget"
-brew "whalebrew"
 brew "youtube-dl"
 brew "zsh"
 cask "1password"
@@ -43,6 +42,7 @@ cask "clip-studio-paint"
 cask "cloudflare-warp"
 cask "cold-turkey-blocker"
 cask "cryptomator"
+cask "dash"
 cask "discord"
 cask "docker"
 cask "element"
@@ -118,6 +118,8 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Plash", id: 1494023538
+mas "Playgrounds", id: 1496833156
 mas "Things", id: 904280696
 mas "Tomito", id: 1526042938
+mas "Webp Converter", id: 1527716894
 mas "Xcode", id: 497799835
