@@ -37,6 +37,7 @@ cask "arduino"
 cask "audacity"
 cask "authy"
 cask "battery-buddy"
+cask "calibre"
 cask "clickup"
 cask "clip-studio-paint"
 cask "cloudflare-warp"
@@ -62,11 +63,13 @@ cask "google-drive"
 cask "hachidori"
 cask "handbrake"
 cask "hazeover"
+cask "hiddenbar"
 cask "inky"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keka"
 cask "kekaexternalhelper"
+cask "kindle"
 cask "kite"
 cask "lunar-client"
 cask "macfuse"
@@ -81,9 +84,6 @@ cask "minecraft"
 cask "notion"
 cask "obs"
 cask "openaudible"
-cask "openemu"
-cask "pictogram"
-cask "qbittorrent"
 cask "rocket"
 cask "sensiblesidebuttons"
 cask "shadow"
@@ -111,7 +111,6 @@ mas "Developer", id: 640199958
 mas "Due", id: 524373870
 mas "GarageBand", id: 682658836
 mas "GIPHY CAPTURE", id: 668208984
-mas "Git Streaks", id: 1525795950
 mas "HP Smart", id: 1474276998
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
