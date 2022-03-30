@@ -11,7 +11,7 @@
         "revision": "0ea9180337fe1b4cd5ae3324c2e644e002d73759"
       },
       "homebrew/core": {
-        "revision": "c5edd122d0944820003cb00b0a749787f3f7cc36"
+        "revision": "4ea9d032add7c66455d7f29d6e6fdfdcbd755b9d"
       },
       "thatrobotdev/sketch-versions": {
         "revision": "d9d555255c56161a970d92b5e45d31e3eac85e98"
@@ -335,6 +335,12 @@
         "options": {
           "full_name": "vlc"
         }
+      },
+      "folding-at-home": {
+        "version": "7.6.21",
+        "options": {
+          "full_name": "folding-at-home"
+        }
       }
     },
     "mas": {
@@ -370,9 +376,9 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.4.4-38-gb2f3081",
+        "HOMEBREW_VERSION": "3.4.4-40-gb533b38",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "c5edd122d0944820003cb00b0a749787f3f7cc36",
+        "Homebrew/homebrew-core": "4ea9d032add7c66455d7f29d6e6fdfdcbd755b9d",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.3"
