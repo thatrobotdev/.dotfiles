@@ -131,10 +131,6 @@ else
   brew tap homebrew/bundle
   brew bundle
 
-  log_attention "Allowing system Java wrappers to find JDKs (password may be required).."
-  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-  sudo ln -sfn /usr/local/opt/openjdk@8/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-8.jdk
-
 fi
 shift
 
