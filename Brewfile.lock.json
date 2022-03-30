@@ -5,13 +5,16 @@
         "revision": "aac61c6fa4be93e54226a6eb78ddbbf676cda729"
       },
       "homebrew/cask": {
-        "revision": "e77baeb9dd124f589cbe8aa30c3d8f3c61aa9cc4"
+        "revision": "dee747de1dc01fea9d555864f93ba0f6938f5376"
       },
       "homebrew/cask-versions": {
         "revision": "0ea9180337fe1b4cd5ae3324c2e644e002d73759"
       },
       "homebrew/core": {
-        "revision": "6d6a484a409f883a109530a44df6be34d4f1a156"
+        "revision": "be343c744f0a6ea1036983a9cb8ebbcb80b50b14"
+      },
+      "thatrobotdev/sketch-versions": {
+        "revision": "d9d555255c56161a970d92b5e45d31e3eac85e98"
       }
     },
     "brew": {
@@ -338,6 +341,12 @@
         "options": {
           "full_name": "vlc"
         }
+      },
+      "sketch@70.4": {
+        "version": "70.4,109185",
+        "options": {
+          "full_name": "sketch@70.4"
+        }
       }
     },
     "mas": {
@@ -374,7 +383,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.4.4-32-gdb723f5",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "6d6a484a409f883a109530a44df6be34d4f1a156",
+        "Homebrew/homebrew-core": "be343c744f0a6ea1036983a9cb8ebbcb80b50b14",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.2.1"
