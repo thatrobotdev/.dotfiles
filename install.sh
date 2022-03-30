@@ -52,9 +52,6 @@ display_help() {
   log_unstyled "Options:"
   log_unstyled "  -h, --help          displays description and options"
   log_unstyled "  -n, --no-homebrew   skips Homebrew config when passed"
-  log_unstyled "  -f --first-time     configured apps and runs scripts for"
-  log_unstyled "                      first-time set-up, run when running"
-  log_unstyled "                      the install script for the first time."
 }
 
 # Abort if Bash isn't installed
@@ -94,7 +91,7 @@ while :; do
   esac
 done
 
-message "Setting up your Mac... (get help with \"-h\" or \"--help\")"
+message "Starting set-up :) (get help with \"-h\" or \"--help\")"
 
 # Start Homebrew config if user doesn't pass a -nh or --no-homebrew argument
 if [ "${nohomebrew-}" ]; then
@@ -150,74 +147,7 @@ else
   message "Oh My ZSH found."
 fi
 
-if [ "${firsttime-}" ]; then
-
-  log_attention "Starting first-time configuration for some programs..."
-
-  # Configuring iTerm2
-
-  log_install "Installing/Updating iTerm2 Color Preset"
-
-  readonly ITERM2_MATERIAL_DESIGN_DIR='iterm2-material-design' # No Color
-
-  git -C "${ITERM2_MATERIAL_DESIGN_DIR}" submodule sync --quiet --recursive
-  git submodule update --init --recursive "${ITERM2_MATERIAL_DESIGN_DIR}"
-
-  log_install "Installing iTerm2 Color Preset..."
-  open iterm2-material-design/material-design-colors.itermcolors
-
-  log_attention "To finish set-up for the color preset, follow these instructions:"
-  message "1. Go to iTerm2 > Preferences > Profiles > Colors"
-  message "2. Click Color Presets..."
-  message "3. Select the material-design-colors from Load Presets"
-
-  log_install "Downloading iTerm 2 Shell Integration"
-  curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
-
-  # Configure Anki
-
-  # https://github.com/FooSoft/anki-connect#notes-for-mac-os-x-users
-  log_install "Configuring Anki to disable AppNap for Anki Connect..."
-  defaults write net.ankiweb.dtop NSAppSleepDisabled -bool true
-  defaults write net.ichi2.anki NSAppSleepDisabled -bool true
-  defaults write org.qt-project.Qt.QtWebEngineCore NSAppSleepDisabled -bool true
-
-  message "First-time configuration for some programs finished."
-
-fi
-
 log_install "Installing/Updating VS Code extensions"
 ./install/vscode-extensions.sh
-
-# Dotbot
-message "Booting up Dotbot..."
-
-########################################################
-### FROM DOTBOT INSTALL FILE
-
-set -e +u
-
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
-
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
-
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
-
-set +e -u
-
-########################################################
-
-# Restoring macOS configs with mackup
-log_install "Restoring macOS configs with mackup..."
-mackup restore
-
-log_install "Backing up current configuration..."
-mackup backup
 
 log_attention "Ayy we good"

@@ -1,96 +1,50 @@
-tap "homebrew-ffmpeg/ffmpeg"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "nrlquaker/createzap"
-tap "thatrobotdev/custom"
-brew "pkg-config"
-brew "harfbuzz"
-brew "libass"
-brew "ffmpeg"
 brew "git"
-brew "mackup"
 brew "mas"
-brew "node"
-brew "openjdk"
 brew "youtube-dl"
-brew "zsh"
 cask "1password"
 cask "adobe-creative-cloud"
-cask "adobe-digital-editions"
 cask "anki"
-cask "arduino"
-cask "audacity"
-cask "authy"
-cask "battery-buddy"
-cask "calibre"
-cask "clickup"
 cask "cloudflare-warp"
-cask "cold-turkey-blocker"
 cask "cryptomator"
-cask "dash"
 cask "discord"
-cask "element"
-cask "figma"
-cask "firefox"
 cask "flux"
 cask "github"
 cask "google-drive"
+cask "google-chrome"
 cask "handbrake"
 cask "hazeover"
 cask "hiddenbar"
-cask "inky"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keka"
 cask "kekaexternalhelper"
-cask "kindle"
 cask "macfuse"
 cask "microsoft-auto-update"
-cask "microsoft-edge"
 cask "microsoft-excel"
 cask "microsoft-powerpoint"
-cask "microsoft-remote-desktop"
-cask "microsoft-teams"
 cask "microsoft-word"
-cask "minecraft"
 cask "notion"
-cask "obs"
-cask "openaudible"
-cask "rocket"
+cask "obsidian"
+cask "optimage"
 cask "sensiblesidebuttons"
-cask "silicon-labs-vcp-driver"
 cask "sketch"
 cask "slack"
-cask "spotify"
-cask "steam"
+cask "standard-notes"
 cask "thingsmacsandboxhelper"
 cask "ti-connect-ce"
 cask "tor-browser"
 cask "unity-hub"
 cask "visual-studio-code"
 cask "vlc"
-cask "yacreader"
-cask "zoom"
-cask "zotero"
-mas "Amphetamine", id: 937984704
-mas "CARROT Weather", id: 993487541
-mas "Day One", id: 1055511498
 mas "Developer", id: 640199958
-mas "Due", id: 524373870
-mas "GarageBand", id: 682658836
+mas "Focused Work - Pomodoro Timer", id: 1523968394
 mas "GIPHY CAPTURE", id: 668208984
-mas "HP Smart", id: 1474276998
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Plash", id: 1494023538
-mas "Playgrounds", id: 1496833156
+mas "In Your Face", id: 1476964367
+mas "Magnet", id: 441258766
 mas "Things", id: 904280696
-mas "Tomito", id: 1526042938
 mas "Webp Converter", id: 1527716894
 mas "Xcode", id: 497799835

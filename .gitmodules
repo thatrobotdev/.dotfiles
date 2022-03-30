@@ -1,6 +1,0 @@
-[submodule "dotbot"]
-	path = dotbot
-	url = https://github.com/anishathalye/dotbot
-[submodule "iterm2-material-design"]
-	path = iterm2-material-design
-	url = https://github.com/MartinSeeler/iterm2-material-design.git
