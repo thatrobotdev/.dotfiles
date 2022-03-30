@@ -16,7 +16,6 @@ cask "github"
 cask "google-drive"
 cask "google-chrome"
 cask "handbrake"
-cask "hazeover"
 cask "hiddenbar"
 cask "iterm2"
 cask "jetbrains-toolbox"
@@ -42,6 +41,7 @@ cask "visual-studio-code"
 cask "vlc"
 mas "Developer", id: 640199958
 mas "Focused Work - Pomodoro Timer", id: 1523968394
+mas "HazeOver • Distraction Dimmer™", id: 430798174
 mas "GIPHY CAPTURE", id: 668208984
 mas "In Your Face", id: 1476964367
 mas "Magnet", id: 441258766

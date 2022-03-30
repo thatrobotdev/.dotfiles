@@ -5,13 +5,13 @@
         "revision": "aac61c6fa4be93e54226a6eb78ddbbf676cda729"
       },
       "homebrew/cask": {
-        "revision": "dee747de1dc01fea9d555864f93ba0f6938f5376"
+        "revision": "e01d3af6f8ea88ebf803ca61e85bbc42dc64aab4"
       },
       "homebrew/cask-versions": {
         "revision": "0ea9180337fe1b4cd5ae3324c2e644e002d73759"
       },
       "homebrew/core": {
-        "revision": "be343c744f0a6ea1036983a9cb8ebbcb80b50b14"
+        "revision": "c5edd122d0944820003cb00b0a749787f3f7cc36"
       },
       "thatrobotdev/sketch-versions": {
         "revision": "d9d555255c56161a970d92b5e45d31e3eac85e98"
@@ -211,13 +211,13 @@
         }
       },
       "jetbrains-toolbox": {
-        "version": "1.22,1.22.10970",
+        "version": "1.23,1.23.11680",
         "options": {
           "full_name": "jetbrains-toolbox"
         }
       },
       "keka": {
-        "version": "1.2.52",
+        "version": "1.2.53",
         "options": {
           "full_name": "keka"
         }
@@ -363,18 +363,19 @@
       "Xcode": {
         "id": "497799835",
         "version": "13.3"
-      }
+      },
+      "HazeOver • Distraction Dimmer™": null
     }
   },
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.4.4-32-gdb723f5",
+        "HOMEBREW_VERSION": "3.4.4-38-gb2f3081",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "be343c744f0a6ea1036983a9cb8ebbcb80b50b14",
+        "Homebrew/homebrew-core": "c5edd122d0944820003cb00b0a749787f3f7cc36",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
-        "macOS": "12.2.1"
+        "macOS": "12.3"
       }
     }
   }
