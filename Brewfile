@@ -40,6 +40,7 @@ cask "tor-browser"
 cask "unity-hub"
 cask "visual-studio-code"
 cask "vlc"
+cask "wacom-tablet"
 mas "Developer", id: 640199958
 mas "Focused Work - Pomodoro Timer", id: 1523968394
 mas "HazeOver • Distraction Dimmer™", id: 430798174

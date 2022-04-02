@@ -2,16 +2,16 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "aac61c6fa4be93e54226a6eb78ddbbf676cda729"
+        "revision": "46a68e89e5efab6affacdb9a3e0a6ebd4376b457"
       },
       "homebrew/cask": {
-        "revision": "e01d3af6f8ea88ebf803ca61e85bbc42dc64aab4"
+        "revision": "a23e8f5a88a5683f83f250f152c2b96b8385ebda"
       },
       "homebrew/cask-versions": {
-        "revision": "0ea9180337fe1b4cd5ae3324c2e644e002d73759"
+        "revision": "325c3ebff3065ce91fa0249f08ddc9192f650ff9"
       },
       "homebrew/core": {
-        "revision": "4ea9d032add7c66455d7f29d6e6fdfdcbd755b9d"
+        "revision": "140d42bd9ada53cfd921abf964796dbf5bac1c3b"
       },
       "thatrobotdev/sketch-versions": {
         "revision": "d9d555255c56161a970d92b5e45d31e3eac85e98"
@@ -325,7 +325,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.65.2",
+        "version": "1.66.0",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -340,6 +340,12 @@
         "version": "7.6.21",
         "options": {
           "full_name": "folding-at-home"
+        }
+      },
+      "wacom-tablet": {
+        "version": "6.3.46-1",
+        "options": {
+          "full_name": "wacom-tablet"
         }
       }
     },
@@ -376,9 +382,9 @@
   "system": {
     "macos": {
       "monterey": {
-        "HOMEBREW_VERSION": "3.4.4-40-gb533b38",
+        "HOMEBREW_VERSION": "3.4.4-59-g3370929",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "4ea9d032add7c66455d7f29d6e6fdfdcbd755b9d",
+        "Homebrew/homebrew-core": "140d42bd9ada53cfd921abf964796dbf5bac1c3b",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.3"
