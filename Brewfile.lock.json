@@ -11,7 +11,7 @@
         "revision": "325c3ebff3065ce91fa0249f08ddc9192f650ff9"
       },
       "homebrew/core": {
-        "revision": "140d42bd9ada53cfd921abf964796dbf5bac1c3b"
+        "revision": "b82ebce4a1497714e8cd94894caac3f1b499d374"
       },
       "thatrobotdev/sketch-versions": {
         "revision": "d9d555255c56161a970d92b5e45d31e3eac85e98"
@@ -347,6 +347,12 @@
         "options": {
           "full_name": "wacom-tablet"
         }
+      },
+      "clip-studio-paint": {
+        "version": "1.11.8",
+        "options": {
+          "full_name": "clip-studio-paint"
+        }
       }
     },
     "mas": {
@@ -384,7 +390,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.4.4-59-g3370929",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "140d42bd9ada53cfd921abf964796dbf5bac1c3b",
+        "Homebrew/homebrew-core": "b82ebce4a1497714e8cd94894caac3f1b499d374",
         "CLT": "13.3.0.0.1.1645755326",
         "Xcode": "13.3",
         "macOS": "12.3"
