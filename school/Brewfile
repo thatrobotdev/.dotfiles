@@ -6,10 +6,14 @@ brew "mas"
 # Browsers
 cask "firefox"
 
+# Music
+cask "spotify"
+
 # Passwords
 cask "1password"
 
 # Productivity
+mas "Things 3", id: 904280696
 mas "Focused Work - Pomodoro Timer", id: 1523968394
 
 # Programming

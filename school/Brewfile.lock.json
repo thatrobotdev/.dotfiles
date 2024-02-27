@@ -35,6 +35,12 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "spotify": {
+        "version": "1.2.31.1205,4d59ad7c,345",
+        "options": {
+          "full_name": "spotify"
+        }
       }
     },
     "brew": {
@@ -138,7 +144,8 @@
       }
     },
     "mas": {
-      "Focused Work - Pomodoro Timer": null
+      "Focused Work - Pomodoro Timer": null,
+      "Things 3": null
     }
   },
   "system": {
