@@ -59,6 +59,12 @@
         "options": {
           "full_name": "microsoft-word"
         }
+      },
+      "thunderbird": {
+        "version": "115.8.0",
+        "options": {
+          "full_name": "thunderbird"
+        }
       }
     },
     "brew": {
