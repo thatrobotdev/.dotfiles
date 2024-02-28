@@ -41,6 +41,12 @@
         "options": {
           "full_name": "spotify"
         }
+      },
+      "discord": {
+        "version": "0.0.295",
+        "options": {
+          "full_name": "discord"
+        }
       }
     },
     "brew": {

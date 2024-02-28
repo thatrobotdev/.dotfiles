@@ -19,3 +19,6 @@ mas "Focused Work - Pomodoro Timer", id: 1523968394
 # Programming
 cask "github"
 cask "visual-studio-code"
+
+# Social
+cask "discord"
