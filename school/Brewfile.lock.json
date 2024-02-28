@@ -53,6 +53,12 @@
         "options": {
           "full_name": "google-drive"
         }
+      },
+      "microsoft-word": {
+        "version": "16.82.24021116",
+        "options": {
+          "full_name": "microsoft-word"
+        }
       }
     },
     "brew": {
