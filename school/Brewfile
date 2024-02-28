@@ -6,6 +6,9 @@ brew "mas"
 # Browsers
 cask "firefox"
 
+# Files
+cask "google-drive"
+
 # Music
 cask "spotify"
 

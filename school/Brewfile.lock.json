@@ -47,6 +47,12 @@
         "options": {
           "full_name": "discord"
         }
+      },
+      "google-drive": {
+        "version": "87.0.2",
+        "options": {
+          "full_name": "google-drive"
+        }
       }
     },
     "brew": {
