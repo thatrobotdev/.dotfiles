@@ -65,6 +65,12 @@
         "options": {
           "full_name": "thunderbird"
         }
+      },
+      "cloudflare-warp": {
+        "version": "2024.2.68.0,20240214.9",
+        "options": {
+          "full_name": "cloudflare-warp"
+        }
       }
     },
     "brew": {

@@ -27,3 +27,6 @@ cask "visual-studio-code"
 
 # Social
 cask "discord"
+
+# Tools
+cask "cloudflare-warp"
