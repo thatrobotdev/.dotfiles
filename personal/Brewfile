@@ -10,6 +10,7 @@ cask "firefox"
 cask "google-drive"
 
 # Gaming
+cask "minecraft"
 cask "steam"
 
 # Music
