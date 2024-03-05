@@ -23,7 +23,6 @@ cask "1password"
 cask "microsoft-word"
 mas "Focused Work - Pomodoro Timer", id: 1523968394
 mas "Things 3", id: 904280696
-cask "thunderbird"
 
 # Learning
 cask "anki"

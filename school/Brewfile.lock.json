@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "77f5526b935e5eb6714f905032616882ec7c1747"
+        "revision": null
       },
       "homebrew/cask": {
-        "revision": "38ffc48ee68ea5545553bd1abefb354037fc2e70"
+        "revision": null
       },
       "homebrew/core": {
-        "revision": "6b885d7c92f9286dda11d1ca5aa8e2557a786ad4"
+        "revision": null
       }
     },
     "cask": {
@@ -19,7 +19,7 @@
         }
       },
       "1password": {
-        "version": "8.10.26",
+        "version": "8.10.27",
         "options": {
           "full_name": "1password"
         }
@@ -49,7 +49,7 @@
         }
       },
       "google-drive": {
-        "version": "87.0.2",
+        "version": "88.0.0",
         "options": {
           "full_name": "google-drive"
         }
@@ -76,6 +76,12 @@
         "version": "23.12.1",
         "options": {
           "full_name": "anki"
+        }
+      },
+      "zoom": {
+        "version": "5.17.10.30974",
+        "options": {
+          "full_name": "zoom"
         }
       }
     },
@@ -187,7 +193,7 @@
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.2.10",
+        "HOMEBREW_VERSION": ">=4.1.0 (shallow or no git repository)",
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.1.0.0.1.1700200546",
