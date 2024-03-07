@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "fa8ca7dad5fe0c1e4bf0629a4aa08b45cfb12b2c"
+        "revision": "addd839e968fc667fb083a43fb350a8535697d0d"
       },
       "homebrew/cask": {
         "revision": null
@@ -25,7 +25,7 @@
         }
       },
       "github": {
-        "version": "3.3.9-051b78a0",
+        "version": "3.3.10-4879575a",
         "options": {
           "full_name": "github"
         }
@@ -43,7 +43,7 @@
         }
       },
       "discord": {
-        "version": "0.0.295",
+        "version": "0.0.296",
         "options": {
           "full_name": "discord"
         }
@@ -193,7 +193,8 @@
     },
     "mas": {
       "Focused Work - Pomodoro Timer": null,
-      "Things 3": null
+      "Things 3": null,
+      "Goodnotes 6": null
     }
   },
   "system": {
