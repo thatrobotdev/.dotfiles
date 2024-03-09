@@ -39,4 +39,4 @@ cask "discord"
 cask "cloudflare-warp"
 mas "CrystalFetch ISO Downloader", id: 2135503303
 brew "ffmpeg"
-brew "handbrake"
+cask "handbrake"
