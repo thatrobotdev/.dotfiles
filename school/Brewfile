@@ -21,6 +21,7 @@ mas "Goodnotes 6", id: 1444383602
 cask "microsoft-word"
 mas "Focused Work - Pomodoro Timer", id: 1523968394
 mas "Things 3", id: 904280696
+mas "UTM Virtual Machines", id: 1538878817
 cask "zoom"
 
 # Learning
