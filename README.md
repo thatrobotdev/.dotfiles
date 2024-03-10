@@ -26,8 +26,8 @@ brew install --cask github
 4. Create a symbolic link for the desired `Brewfile` and `Brewfile.json.lock` files.
 
 ```sh
-ln -s ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile.lock.json Brewfile
-ln -s ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile.lock.json Brewfile.lock.json
+ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile Brewfile
+ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile.lock.json Brewfile.lock.json
 ```
 
 5. Sync upstream Brewfile with local software
