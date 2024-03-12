@@ -1,42 +1,24 @@
 tap "homebrew/bundle"
+brew "ffmpeg"
 brew "mas"
-
-# Art
-cask "inkscape"
-
-# Browsers
-cask "firefox"
-
-# Files
-cask "google-drive"
-
-# Music
-cask "spotify"
-
-# Passwords
 cask "1password"
-
-# Productivity
-mas "Goodnotes 6", id: 1444383602
+cask "aegisub"
+cask "anki"
+cask "cloudflare-warp"
+cask "discord"
+cask "firefox"
+cask "github"
+cask "google-drive"
+cask "handbrake"
+cask "inkscape"
 cask "microsoft-word"
-mas "Focused Work - Pomodoro Timer", id: 1523968394
-mas "Things 3", id: 904280696
-mas "UTM Virtual Machines", id: 1538878817
+cask "microsoft-remote-desktop"
+cask "spotify"
+cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
-
-# Learning
-cask "anki"
-
-# Programming
-cask "github"
-cask "visual-studio-code"
-
-# Social
-cask "discord"
-
-# Tools
-cask "cloudflare-warp"
 mas "CrystalFetch ISO Downloader", id: 2135503303
-brew "ffmpeg"
-cask "handbrake"
+mas "Focused Work - Pomodoro Timer", id: 1523968394
+mas "Goodnotes 6", id: 1444383602
+mas "Things 3", id: 904280696
+mas "UTM Virtual Machines", id: 1538878817

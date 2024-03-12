@@ -1,36 +1,16 @@
 tap "homebrew/bundle"
 brew "mas"
-
-# Browsers
-cask "firefox"
-
-# Files
-cask "google-drive"
-
-# Gaming
-cask "minecraft"
-cask "steam"
-
-# Music
-cask "spotify"
-
-# Passwords
 cask "1password"
-
-# Productivity
+cask "anki"
+cask "cloudflare-warp"
+cask "discord"
+cask "firefox"
+cask "github"
+cask "google-drive"
 cask "microsoft-word"
+cask "minecraft"
+cask "spotify"
+cask "steam"
+cask "visual-studio-code"
 mas "Focused Work - Pomodoro Timer", id: 1523968394
 mas "Things 3", id: 904280696
-
-# Learning
-cask "anki"
-
-# Programming
-cask "github"
-cask "visual-studio-code"
-
-# Social
-cask "discord"
-
-# Tools
-cask "cloudflare-warp"
