@@ -10,32 +10,33 @@ Dotfiles are configuration files like `.zshrc` or `.gitconfig` that configure pr
 
 1. Install [Homebrew](https://brew.sh/) (package manager)
 
-```sh
-# https://brew.sh/
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+    ```sh
+    # https://brew.sh/
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
 
 2. Install [GitHub Desktop](https://desktop.github.com/)
 
-```sh
-# https://formulae.brew.sh/cask/github
-brew install --cask github
-```
+    ```sh
+    # https://formulae.brew.sh/cask/github
+    brew install --cask github
+    ```
 
 3. Clone this repository
-4. Create a symbolic link for the desired `Brewfile` and `Brewfile.json.lock` files.
+4. Create a symbolic link for the desired `Brewfile`.
 
-```sh
-ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile Brewfile
-ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile.lock.json Brewfile.lock.json
-```
+    ```sh
+    ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile Brewfile
+    ```
 
 5. Sync upstream Brewfile with local software
-```sh
-brew bundle --force cleanup
-```
+
+    ```sh
+    brew bundle --force cleanup
+    ```
 
 6. Install software
-```sh
-brew bundle
-```
+
+    ```sh
+    brew bundle
+    ```
