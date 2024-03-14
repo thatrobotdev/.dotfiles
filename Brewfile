@@ -21,6 +21,7 @@ cask "spotify"
 cask "steam"
 cask "visual-studio-code"
 cask "vlc"
+cask "yt-dlp"
 cask "zoom"
 mas "CrystalFetch ISO Downloader", id: 2135503303
 mas "Focused Work - Pomodoro Timer", id: 1523968394
