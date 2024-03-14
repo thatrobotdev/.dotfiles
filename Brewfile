@@ -2,6 +2,8 @@ brew "mas"
 tap "homebrew/bundle"
 
 brew "ffmpeg"
+brew "yt-dlp"
+
 cask "1password"
 cask "aegisub"
 cask "anki"
@@ -21,8 +23,8 @@ cask "spotify"
 cask "steam"
 cask "visual-studio-code"
 cask "vlc"
-cask "yt-dlp"
 cask "zoom"
+
 mas "CrystalFetch ISO Downloader", id: 2135503303
 mas "Focused Work - Pomodoro Timer", id: 1523968394
 mas "Goodnotes 6", id: 1444383602
