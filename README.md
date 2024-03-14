@@ -26,7 +26,7 @@ Dotfiles are configuration files like `.zshrc` or `.gitconfig` that configure pr
 4. Create a symbolic link for the desired `Brewfile`.
 
     ```sh
-    ln -s /Users/<user>/Documents/GitHub/.dotfiles/<environment>/Brewfile Brewfile
+    ln -s /Users/<user>/Documents/GitHub/.dotfiles/Brewfile Brewfile
     ```
 
 5. Sync upstream Brewfile with local software
@@ -40,3 +40,7 @@ Dotfiles are configuration files like `.zshrc` or `.gitconfig` that configure pr
     ```sh
     brew bundle
     ```
+
+## Multiple users
+
+See <https://www.codejam.info/2021/11/homebrew-multi-user.html>
