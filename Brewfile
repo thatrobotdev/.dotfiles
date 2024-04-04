@@ -5,6 +5,7 @@ brew "ffmpeg"
 brew "yt-dlp"
 
 cask "1password"
+cask "adobe-creative-cloud"
 cask "aegisub"
 cask "anki"
 cask "cloudflare-warp"
