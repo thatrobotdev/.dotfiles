@@ -29,6 +29,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
 
+mas "Amazon Kindle", id: 302584613
 mas "CrystalFetch ISO Downloader", id: 2135503303
 mas "Focused Work - Pomodoro Timer", id: 1523968394
 mas "Goodnotes 6", id: 1444383602
