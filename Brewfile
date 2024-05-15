@@ -2,6 +2,7 @@ brew "mas"
 tap "homebrew/bundle"
 
 brew "ffmpeg"
+brew "imagemagick"
 brew "yt-dlp"
 
 cask "1password"
